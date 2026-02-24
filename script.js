@@ -529,7 +529,7 @@ const modalContents = {
     notificacoes: {
         title: 'NOTIFICAÇÕES',
         content: `
-            <div class="update-info">Informações atualizadas em 21/02/2026 às 23:00.</div>
+            <div class="update-info">Informações atualizadas em 23/02/2026 às 23:00.</div>
             <div class="notif-card">
                 <div class="notif-title">
                     <span class="notif-date">23/02/2026</span>
@@ -891,3 +891,4 @@ document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
     }
 
 });
+
