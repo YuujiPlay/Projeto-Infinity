@@ -1195,15 +1195,12 @@ body {
         display: flex;
         flex-direction: column;
     }
- 
     .center-panel {
         order: -1;
     }
- 
     .left-panel {
         order: 1;
     }
- 
     .right-panel:not(.mobile-only-panel) {
         order: 2;
     }
@@ -1301,4 +1298,193 @@ body {
     top: 1.2rem;
     right: 1.2rem;
   }
+}
+
+/* === ESTILO DO MENU DE OPÇÕES (estilo Tag Force / menu de jogo) === */
+.options-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 0;
+}
+
+.option-item {
+    background: rgba(255, 215, 0, 0.08); /* fundo sutil dourado */
+    border: 2px solid #4169e1; /* azul de seleção clássico do Tag Force */
+    border-radius: 10px;
+    color: #e0e0ff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.95rem;
+    padding: 16px 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.option-item:hover {
+    background: rgba(65, 105, 225, 0.35);
+    border-color: #ffd700; /* dourado no hover */
+    transform: translateX(8px) scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.option-item[data-status="liberado"] {
+    border-color: #10b981;
+    background: rgba(16, 185, 129, 0.12);
+}
+
+.option-item[data-status="liberado"]:hover {
+    border-color: #059669;
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+}
+
+.option-item[data-status="fechado"] {
+    border-color: #6b7280;
+    opacity: 0.85;
+}
+
+.option-item[data-status="cancelado"] {
+    border-color: #ef4444;
+    opacity: 0.75;
+    cursor: not-allowed;
+}
+
+.option-item[data-status="cancelado"]:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.option-icon {
+    font-size: 1.6rem;
+    min-width: 45px;
+    text-align: center;
+    color: var(--accent);
+}
+
+.option-text {
+    flex: 1;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.option-link {
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s;
+    min-width: 110px;
+    text-align: center;
+}
+
+.option-link:hover {
+    background: var(--accent);
+    transform: scale(1.08);
+}
+
+.option-status {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid var(--muted);
+}
+
+.option-item[data-status="liberado"] .option-status {
+    background: #10b981;
+    border-color: #059669;
+}
+
+.option-item[data-status="fechado"] .option-status {
+    background: #6b7280;
+    border-color: #4b5563;
+}
+
+.option-item[data-status="cancelado"] .option-status {
+    background: #ef4444;
+    border-color: #b91c1c;
+}
+
+/* ────────────────────────────────────────────────
+   REDUÇÃO ESPECÍFICA PARA MOBILE (≤ 480px)
+   ──────────────────────────────────────────────── */
+@media (max-width: 480px) {
+    .options-menu {
+        gap: 8px;              /* menos espaço entre itens */
+        padding: 8px 0;
+    }
+
+    .option-item {
+        padding: 12px 12px;    /* padding horizontal ainda menor para aliviar compressão */
+        font-size: 0.82rem;    /* base menor */
+        gap: 6px;              /* gap interno reduzido */
+        border-width: 1.5px;
+        min-height: 52px;
+    }
+
+    .option-icon {
+        font-size: 1.3rem;
+        min-width: 36px;
+    }
+
+    .option-text {
+        font-size: 0.78rem;    /* TÍTULOS MENOR (era 0.86rem) — principal ajuste pedido */
+        line-height: 1.2;      /* melhora legibilidade em texto pequeno */
+    }
+
+    .option-link {
+        padding: 6px 10px;
+        min-width: 85px;       /* botão ACESSAR um pouco menor */
+        font-size: 0.76rem;
+    }
+
+    .option-status {
+        width: 30px;           /* status menor para não apertar tanto */
+        height: 30px;
+        font-size: 1.05rem;
+        border-radius: 6px;
+    }
+
+    /* Hover mais discreto no mobile para não interferir em touch */
+    .option-item:hover {
+        transform: translateX(4px) scale(1.01);
+    }
+}
+
+/* Ainda mais compacto em telas muito pequenas (≤ 360px) */
+@media (max-width: 360px) {
+    .option-item {
+        padding: 10px 10px;
+        font-size: 0.78rem;
+    }
+    .option-icon {
+        font-size: 1.2rem;
+        min-width: 32px;
+    }
+    .option-text {
+        font-size: 0.74rem;
+    }
+    .option-link {
+        min-width: 78px;
+        padding: 5px 9px;
+        font-size: 0.72rem;
+    }
+    .option-status {
+        width: 28px;
+        height: 28px;
+        font-size: 1rem;
+    }
 }

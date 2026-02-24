@@ -732,53 +732,43 @@ const modalContents = {
         title: 'OPÇÕES',
         content: `
             <div class="update-info">Informações atualizadas em 23/02/2026 às 21:00.</div>
-            
-            <div class="duelista-main-card">
-                <h3 class="problem-title">SPECIAL</h3>
-                <div class="inner-access-card">
-                    <a class="duelista-access-btn" href="https://discord.gg/mKFWm897hQ" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-                    <div class="duelista-status-card status-liberado"><i class="fas fa-check"></i></div>
-                </div>
-            </div>
-            
-            <div class="duelista-main-card">
-                <h3 class="problem-title">PERFIS</h3>
-                <div class="inner-access-card">
-                    <a class="duelista-access-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-                    <div class="duelista-status-card status-fechado"><i class="fas fa-times"></i></div>
-                </div>
-            </div>
-            
-            <div class="duelista-main-card">
-                <h3 class="problem-title">DECK</h3>
-                <div class="inner-access-card">
-                    <a class="duelista-access-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-                    <div class="duelista-status-card status-fechado"><i class="fas fa-times"></i></div>
-                </div>
-            </div>
-            
-            <div class="duelista-main-card">
-                <h3 class="problem-title">TORNEIO</h3>
-                <div class="inner-access-card">
-                    <a class="duelista-access-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-                    <div class="duelista-status-card status-fechado"><i class="fas fa-times"></i></div>
-                </div>
-            </div>
-            
-            <div class="duelista-main-card">
-                <h3 class="problem-title">EVENTO</h3>
-                <div class="inner-access-card">
-                    <a class="duelista-access-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-                    <div class="duelista-status-card status-fechado"><i class="fas fa-times"></i></div>
-                </div>
-            </div>
-            
-            <div class="duelista-main-card">
-                <h3 class="problem-title">EXTRA</h3>
-                <div class="inner-access-card">
-                    <a class="duelista-access-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-                    <div class="duelista-status-card status-cancelado"><i class="fas fa-ban"></i></div>
-                </div>
+            <div class="options-menu">
+                <button class="option-item" data-status="liberado">
+                    <span class="option-icon"><i class="fas fa-star"></i></span>
+                    <span class="option-text">SPECIAL</span>
+                    <a href="https://discord.gg/mKFWm897hQ" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <span class="option-status"><i class="fas fa-check"></i></span>
+                </button>
+                <button class="option-item" data-status="fechado">
+                    <span class="option-icon"><i class="fas fa-user"></i></span>
+                    <span class="option-text">PERFIS</span>
+                    <a href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <span class="option-status"><i class="fas fa-times"></i></span>
+                </button>
+                <button class="option-item" data-status="fechado">
+                    <span class="option-icon"><i class="fas fa-layer-group"></i></span>
+                    <span class="option-text">DECK</span>
+                    <a href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <span class="option-status"><i class="fas fa-times"></i></span>
+                </button>
+                <button class="option-item" data-status="fechado">
+                    <span class="option-icon"><i class="fas fa-trophy"></i></span>
+                    <span class="option-text">TORNEIO</span>
+                    <a href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <span class="option-status"><i class="fas fa-times"></i></span>
+                </button>
+                <button class="option-item" data-status="fechado">
+                    <span class="option-icon"><i class="fas fa-calendar-alt"></i></span>
+                    <span class="option-text">EVENTO</span>
+                    <a href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <span class="option-status"><i class="fas fa-times"></i></span>
+                </button>
+                <button class="option-item" data-status="cancelado">
+                    <span class="option-icon"><i class="fas fa-ban"></i></span>
+                    <span class="option-text">EXTRA</span>
+                    <a href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <span class="option-status"><i class="fas fa-ban"></i></span>
+                </button>
             </div>
         `
     }
@@ -889,6 +879,4 @@ document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
             numerion.style.display = 'none';
         });
     }
-
 });
-
