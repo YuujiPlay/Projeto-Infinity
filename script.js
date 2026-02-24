@@ -532,6 +532,14 @@ const modalContents = {
             <div class="update-info">Informações atualizadas em 21/02/2026 às 23:00.</div>
             <div class="notif-card">
                 <div class="notif-title">
+                    <span class="notif-date">23/02/2026</span>
+                    <div class="notif-badge badge-admin">Admin</div>
+                </div>
+                <div class="notif-divider"></div>
+                <p class="notif-desc">O site foi atualizado e essa será a estrutura oficial de agora em diante, espero que gostem.</p>
+            </div>
+            <div class="notif-card">
+                <div class="notif-title">
                     <span class="notif-date">20/02/2026</span>
                     <div class="notif-badge badge-admin">Admin</div>
                 </div>
@@ -881,4 +889,5 @@ document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
             numerion.style.display = 'none';
         });
     }
+
 });
