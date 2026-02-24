@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuujiPlay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-zinc-950 text-gray-200">
+<header class="topbar">
+    <div class="left-brand">
+        <div class="status-dot"></div>
+        <!-- Clique aqui alterna o tema -->
+        <span class="brand" id="theme-toggle">YuujiPlay</span>
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="topbar-menu" id="topbarMenu">
+        <!-- 1. Redes sociais -->
+        <div class="right-social">
+            <a href="https://discord.com/invite/ZZJsWxCCpD" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+            <a href="https://www.facebook.com/YuujiPlay" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/yuujiplay" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/YuujiPlay" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <!-- 2. Links centrais -->
+        <div class="center-links">
+            <a class="top-card" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube"></i>
+                <span>Inscreva-se</span>
+                <div class="numerion">1</div>
+            </a>
+            <a class="top-card" href="https://discord.com/invite/ZZJsWxCCpD" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-discord"></i>
+                <span>YuujiDiscPlay</span>
+                <div class="numerion">5</div>
+            </a>
+            <a class="top-card" href="https://discord.com/invite/UmbgRSmaSQ" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-discord"></i>
+                <span>Projeto Infinity</span>
+                <div class="numerion">99</div>
+            </a>
+            <div class="top-card">
+                <i class="fas fa-users"></i>
+                <span>YouTube: </span>
+                <div class="members-count-gradient">20h00</div>
+                <div class="badge">LIVE</div>
+            </div>
+        </div>
+        <!-- 3. Painel direito (apenas mobile) -->
+        <section class="panel right-panel mobile-only-panel">
+            <button class="menu-btn" data-modal="menu_duelista">OPÇÕES</button>
+            <button class="menu-btn" data-modal="notificacoes">
+                NOTIFICAÇÕES
+                <div class="numerion">2</div>
+            </button>
+            <button class="menu-btn" data-modal="comunicados">
+                COMUNICADOS
+                <div class="numerion">2</div>
+            </button>
+            <button class="menu-btn" data-modal="problemas">
+                PROBLEMAS
+                <div class="numerion">5</div>
+            </button>
+            <button class="menu-btn" data-modal="recusados">
+                RECUSADOS
+                <div class="numerion">1</div>
+            </button>
+            <button class="menu-btn" data-modal="servidores">SERVIDORES</button>
+        </section>
+        <!-- 4. Botão Fechar Menu (apenas mobile) -->
+        <button class="close-menu-btn">Fechar Menu</button>
+    </div>
+</header>
+<main class="layout">
+    <section class="panel left-panel">
+        <button class="menu-btn" data-modal="equipe">EQUIPE</button>
+        <button class="menu-btn" data-modal="projetos">PROJETOS</button>
+        <button class="menu-btn" data-modal="contrib">CONTRIBUÍDORES</button>
+        <button class="menu-btn" data-modal="divulg">DIVULGAÇÕES</button>
+        <button class="menu-btn" data-modal="membros">MEMBROS</button>
+        <button class="menu-btn" data-modal="apoia">APOIA-ME</button>
+        <button class="menu-btn" data-modal="paginas">PÁGINAS</button>
+    </section>
+    <section class="panel center-panel">
+        <h2 class="section-title">RECOMENDAÇÕES</h2>
+        <div class="carousel" id="carousel">
+            <div class="game-card" data-index="5">
+                <a href="https://store.steampowered.com/app/775500/SCARLET_NEXUS/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.steamstatic.com/steam/apps/775500/capsule_616x353.jpg" alt="Scarlet Nexus" loading="lazy">
+                    <div class="platform-badge">STEAM</div>
+                    <h3>Scarlet Nexus</h3>
+                    <p>Escolha entre Yuito e Kasane, psiônicos de elite com um talento para Psicocinese e suas próprias motivações para lutar. Conclua ambas as histórias para revelar todos os mistérios de um futuro Brain Punk envolto em tecnologia e habilidades psíquicas.</p>
+                </a>
+            </div>
+            <div class="game-card active" data-index="0">
+                <a href="https://store.steampowered.com/app/2592160/Dispatch/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://midias.correiobraziliense.com.br/_midias/png/2025/09/19/800x600/1_2-59197956.png" alt="Dispatch" loading="lazy">
+                    <div class="platform-badge">STEAM</div>
+                    <h3>Dispatch</h3>
+                    <p>Dispatch é uma comédia sobre o ambiente de trabalho de super-heróis onde as suas escolhas importam. Gerencie uma equipe de heróis e planeje quem enviar para as emergências, tudo enquanto equilibra a política do escritório, relacionamentos pessoais e sua própria jornada para se tornar um herói.</p>
+                </a>
+            </div>
+            <div class="game-card" data-index="1">
+                <a href="https://store.steampowered.com/app/1623730/Palworld/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/capsule_616x353.jpg" alt="Palworld" loading="lazy">
+                    <div class="platform-badge">STEAM</div>
+                    <h3>Palworld</h3>
+                    <p>Este é um jogo completamente inovador de fabricação e sobrevivência em mundo aberto com suporte para vários jogadores. Nele você reúne criaturas fantásticas conhecidas como "Pals" em um vasto mundo e as usa em batalhas ou para trabalhos em construção, fazendas ou fábricas.</p>
+                </a>
+            </div>
+            <div class="game-card" data-index="2">
+                <a href="https://store.steampowered.com/app/3489700/Stellar_Blade/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202401/2211/ff293dfc8d1a7030f658ff00e9f5d4d292e2253eff408a72.jpg" alt="Stellar Blade" loading="lazy">
+                    <div class="platform-badge">STEAM</div>
+                    <h3>Stellar Blade</h3>
+                    <p>Salve a humanidade da extinção no jogo de ação e aventura pós-apocalíptico Stellar Blade™. Vivencie combates intensos e um enredo cheio de reviravoltas conforme você desvenda os mistérios do colapso da Terra.</p>
+                </a>
+            </div>
+            <div class="game-card" data-index="3">
+                <a href="https://store.steampowered.com/app/1449850/YuGiOh_Master_Duel/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1449850/capsule_616x353.jpg" alt="Yu-Gi-Oh! Master Duel" loading="lazy">
+                    <div class="platform-badge">STEAM</div>
+                    <h3>Yu-Gi-Oh! Master Duel</h3>
+                    <p>A edição definitiva do card game competitivo que está em processo de evolução há mais de 20 anos! Duele no mais alto nível contra Duelistas de todo o mundo.</p>
+                </a>
+            </div>
+            <div class="game-card" data-index="4">
+                <a href="https://store.steampowered.com/app/2527500/MiSide/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2527500/capsule_616x353.jpg" alt="MiSide" loading="lazy">
+                    <div class="platform-badge">STEAM</div>
+                    <h3>MiSide</h3>
+                    <p>Imagine que você tem um jogo no qual se importa com um personagem. Mas consegue imaginar um dia você entrando nesse jogo?</p>
+                </a>
+            </div>
+            <div class="game-card" data-index="6">
+                <a href="https://store.steampowered.com/app/239140/Dying_Light/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/239140/capsule_616x353.jpg" alt="Dying Light" loading="lazy">
+                    <div class="platform-badge">STEAM</div>
+                    <h3>Dying Light</h3>
+                    <p>Um jogo de ação e sobrevivência em primeira pessoa em um mundo aberto pós-apocalíptico tomado por zumbis comedores de carne humana. Atravesse uma cidade devastada por um vírus misterioso. Procure por suprimentos, crie armas e enfrente os infectados.</p>
+                </a>
+            </div>
+            <div class="game-card" data-index="7">
+                <a href="https://store.steampowered.com/app/243470/Watch_Dogs/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/243470/capsule_616x353.jpg" alt="Watch Dogs" loading="lazy">
+                    <div class="platform-badge">STEAM</div>
+                    <h3>Watch Dogs</h3>
+                    <p>No mundo hiperconectado de hoje, Chicago opera sob o ctOS, a rede de computadores mais avançada dos Estados Unidos.</p>
+                </a>
+            </div>
+            <div class="game-card" data-index="8">
+                <a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://clan.fastly.steamstatic.com/images/27766192/8133cfc6f734ea335924df60ac0d0659410061e1.png" alt="Em Breve" loading="lazy">
+                    <div class="platform-badge">STEAM</div>
+                    <h3>Em Breve..</h3>
+                    <p>Em Breve devo adicionar mais recomendações para todos.</p>
+                </a>
+            </div>
+        </div>
+        <button class="menu-btn full-list-btn" data-modal="full_recomendacoes">VER LISTA COMPLETA</button>
+        <div class="download-grid">
+            <button data-modal="baixar_jogos">JOGOS</button>
+            <button data-modal="baixar_texturas">TEXTURAS</button>
+            <button data-modal="baixar_adicionais">ADICIONAIS</button>
+            <button data-modal="baixar_templates">TEMPLATES</button>
+            <button data-modal="baixar_temas">TEMAS</button>
+            <button data-modal="baixar_skins">SKINS</button>
+        </div>
+    </section>
+    <!-- Painel direito visível no desktop -->
+    <section class="panel right-panel">
+        <button class="menu-btn" data-modal="menu_duelista">OPÇÕES</button>
+        <button class="menu-btn" data-modal="notificacoes">
+            NOTIFICAÇÕES
+            <div class="numerion">2</div>
+        </button>
+        <button class="menu-btn" data-modal="comunicados">
+            COMUNICADOS
+            <div class="numerion">2</div>
+        </button>
+        <button class="menu-btn" data-modal="problemas">
+            PROBLEMAS
+            <div class="numerion">5</div>
+        </button>
+        <button class="menu-btn" data-modal="recusados">
+            RECUSADOS
+            <div class="numerion">1</div>
+        </button>
+        <button class="menu-btn" data-modal="servidores">SERVIDORES</button>
+    </section>
+</main>
+<footer class="footer">
+    <p>Com carinho, <a href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">YuujiPlay ❤</a></p>
+    <p>© Todos os direitos reservados a YuujiPlay.</p>
+    <p>O site não armazena nenhum arquivo em seu servidor. Todo o conteúdo é fornecido por terceiros.</p>
+    <p>Versão <span class="version">1.0.0</span></p>
+</footer>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+        <button class="close-btn" aria-label="Fechar modal">X</button>
+        <div id="modal-body"></div>
+    </div>
+</div>
+<div id="notification" class="notification hidden" role="alert">Copiado para a área de transferência!</div>
+<div class="menu-overlay hidden" id="menuOverlay"></div>
+<script src="script.js"></script>
+</body>
+</html>
