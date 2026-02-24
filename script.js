@@ -144,7 +144,7 @@ const modalContents = {
             <div class="page-card">
                 <h3 class="page-title">VAZIO</h3>
                 <div class="page-tag">EM BREVE..</div>
-                <a class="page-btn" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">VISITAR</a>
+                <a class="page-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">VISITAR</a>
                 <div class="page-icon icon-inativo">X</div>
             </div>
         `
@@ -192,9 +192,9 @@ const modalContents = {
         `
     },
     baixar_jogos: {
-        title: 'JOGOS',
+        title: 'TRADUÇÕES',
         content: `
-            <div class="update-info">Informações atualizadas em 21/02/2026 às 23:00.</div>
+            <div class="update-info">Todas ISO em Português!</div>
             <div class="download-card">
                 <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
                 <div class="download-title"><span>TAG FORCE 1</span></div>
@@ -202,7 +202,7 @@ const modalContents = {
                     <div class="download-tag">ISO</div>
                     <div class="download-tag">4.0.1</div>
                 </div>
-                <div class="download-desc">Esse é um clássico não tem jeito.</div>
+                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/file/hqca921n898bezq/Yu-Gi-Oh%21_GX_Tag_Force_1_PT-BR_%28v4.0.1%29.iso/file" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/file/hqca921n898bezq/Yu-Gi-Oh%21_GX_Tag_Force_1_PT-BR_%28v4.0.1%29.iso/file')">COPIAR</button>
@@ -216,7 +216,7 @@ const modalContents = {
                     <div class="download-tag">ISO</div>
                     <div class="download-tag">3.0.1</div>
                 </div>
-                <div class="download-desc">Esse é um clássico não tem jeito.</div>
+                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1BynOHG3UAVZKzYfcWBMWikkTeFF65xi8/view?pli=1" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1BynOHG3UAVZKzYfcWBMWikkTeFF65xi8/view?pli=1')">COPIAR</button>
@@ -230,7 +230,7 @@ const modalContents = {
                     <div class="download-tag">ISO</div>
                     <div class="download-tag">3.0.1</div>
                 </div>
-                <div class="download-desc">Esse é um clássico não tem jeito.</div>
+                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1BSC9975cekQoS9FP-IDDxwV22CHM9pOL/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1BSC9975cekQoS9FP-IDDxwV22CHM9pOL/view')">COPIAR</button>
@@ -244,7 +244,7 @@ const modalContents = {
                     <div class="download-tag">ISO</div>
                     <div class="download-tag">3.0.1</div>
                 </div>
-                <div class="download-desc">Esse é um clássico não tem jeito.</div>
+                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/19VhBVKgwaQGEy_eR7fxMucM2_rUWCE_s/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/19VhBVKgwaQGEy_eR7fxMucM2_rUWCE_s/view')">COPIAR</button>
@@ -258,7 +258,7 @@ const modalContents = {
                     <div class="download-tag">ISO</div>
                     <div class="download-tag">3.0.1</div>
                 </div>
-                <div class="download-desc">Esse é um clássico não tem jeito.</div>
+                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1s6d-mP9evM8fQr5MqxB1NaVINELggBpF/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1s6d-mP9evM8fQr5MqxB1NaVINELggBpF/view')">COPIAR</button>
@@ -274,6 +274,7 @@ const modalContents = {
                     <div class="download-tag">SOLO</div>
                 </div>
                 <div class="download-desc">Versão completa sem cortes, para quem joga somente OFFLINE (Com descrição de monstros normais+).</div>
+                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1EvvYciz6Rh_Tqj7_aBWHoBtpw_B8e3Nh/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1EvvYciz6Rh_Tqj7_aBWHoBtpw_B8e3Nh/view')">COPIAR</button>
@@ -289,6 +290,7 @@ const modalContents = {
                     <div class="download-tag">MULTI</div>
                 </div>
                 <div class="download-desc">Essa versão foi otimizada (Descrição de monstros normais removidas) para quem gosta de jogar ONLINE.</div>
+                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1ri-YwZHIfKBzQ9lEnnSivhP8wY9OGrv7/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1ri-YwZHIfKBzQ9lEnnSivhP8wY9OGrv7/view')">COPIAR</button>
@@ -302,7 +304,7 @@ const modalContents = {
                     <div class="download-tag">ISO</div>
                     <div class="download-tag">4.0.1</div>
                 </div>
-                <div class="download-desc">Tradução completa em PT-BR.</div>
+                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1MGEv1ThBxcL0EcYPZc_DEn4XIYL-Sn7z/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1MGEv1ThBxcL0EcYPZc_DEn4XIYL-Sn7z/view')">COPIAR</button>
@@ -314,12 +316,13 @@ const modalContents = {
     baixar_texturas: {
         title: 'TEXTURAS',
         content: `
-            <div class="update-info">Informações atualizadas em 21/02/2026 às 23:00.</div>
+            <div class="update-info">Temos texturas para todos os TAG FORCE's, não estão perfeitas, mas é feito com carinho.</div>
             <div class="download-card">
                 <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
                 <div class="download-title"><span>TAG FORCE 1</span></div>
                 <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente, mas não desisti de continuar melhorando esse jogo.</div>
+                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente.</div>
+                <div class="download-desc">LANÇADO <span class="download-tag">30/07/2025</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/file/eu0kehtal2scvge/ULUS10136.zip/file" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/file/eu0kehtal2scvge/ULUS10136.zip/file')">COPIAR</button>
@@ -330,7 +333,8 @@ const modalContents = {
                 <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
                 <div class="download-title"><span>TAG FORCE 2</span></div>
                 <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente, mas não desisti de continuar melhorando esse jogo.</div>
+                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente.</div>
+                <div class="download-desc">LANÇADO <span class="download-tag">12/01/2025</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/u7w58oymmc9q2/Tag+Force+2" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/u7w58oymmc9q2/Tag+Force+2')">COPIAR</button>
@@ -341,8 +345,8 @@ const modalContents = {
                 <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
                 <div class="download-title"><span>TAG FORCE 3</span></div>
                 <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Texturas otimizadas para a terceira versão, com foco em visuais aprimorados e correções de bugs gráficos.</div>
-                <div class="download-desc">Lançado: 12/01/25</div>
+                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente</div>
+                <div class="download-desc">LANÇADO <span class="download-tag">12/01/2025</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/rnsuyg2rw1i70/Tag+Force+3" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/rnsuyg2rw1i70/Tag+Force+3')">COPIAR</button>
@@ -353,8 +357,8 @@ const modalContents = {
                 <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
                 <div class="download-title"><span>TAG FORCE 4</span></div>
                 <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Texturas futuristas para a série 5D's, com elementos dinâmicos e alta resolução para duelos intensos.</div>
-                <div class="download-desc">Lançado: 12/01/25</div>
+                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente.</div>
+                <div class="download-desc">LANÇADO <span class="download-tag">12/01/2025</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/8e1xro126r2kb/Tag+Force+4" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/8e1xro126r2kb/Tag+Force+4')">COPIAR</button>
@@ -365,8 +369,8 @@ const modalContents = {
                 <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
                 <div class="download-title"><span>TAG FORCE 5</span></div>
                 <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Texturas refinadas para a quinta edição da série 5D's, otimizadas para velocidade e clareza visual.</div>
-                <div class="download-desc">Lançado: 12/01/25</div>
+                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente.</div>
+                <div class="download-desc">LANÇADO <span class="download-tag">12/01/2025</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/959blew9auzly/Tag+Force+5" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/959blew9auzly/Tag+Force+5')">COPIAR</button>
@@ -377,8 +381,8 @@ const modalContents = {
                 <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
                 <div class="download-title"><span>TAG FORCE 6</span></div>
                 <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Texturas finais da saga 5D's, com efeitos aprimorados e suporte para resoluções altas.</div>
-                <div class="download-desc">Lançado: 12/01/25</div>
+                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente.</div>
+                <div class="download-desc">LANÇADO <span class="download-tag">12/01/2025</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/n6ia1pyjoezs5/Tag+Force+6" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/n6ia1pyjoezs5/Tag+Force+6')">COPIAR</button>
@@ -389,8 +393,8 @@ const modalContents = {
                 <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
                 <div class="download-title"><span>TAG FORCE SPECIAL</span></div>
                 <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Texturas exclusivas para o jogo especial da série Arc-V, com temas únicos e personalizações avançadas.</div>
-                <div class="download-desc">Lançado: 04/02/25</div>
+                <div class="download-desc">Em desenvolvimento: Estou refazendo todas as texturas novamente, porque muitas feitas foram usando Upscale na época que eu tinha somente um celular pra editar.</div>
+                <div class="download-desc">LANÇADO <span class="download-tag">04/02/2025</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/d8h7602entcwy/Tag+Force+S" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/d8h7602entcwy/Tag+Force+S')">COPIAR</button>
@@ -439,7 +443,7 @@ const modalContents = {
                     <div class="download-tag tag-psd">PSD</div>
                     <div class="download-tag">YuujiPlay</div>
                 </div>
-                <div class="download-desc">Lançado: 00/00/0000 <span class="download-tag">1.0.0</span></div>
+                <div class="download-desc">LANÇADO <span class="download-tag">00/00/0000</span></div>
                 <div class="download-desc">Textura para o TAG FORCE 1.</div>
                 <div class="download-desc">Ainda vou postar no site esse conteúdo.</div>
                 <div class="download-btns">
@@ -455,7 +459,7 @@ const modalContents = {
                     <div class="download-tag tag-psd">PSD</div>
                     <div class="download-tag">YuujiPlay</div>
                 </div>
-                <div class="download-desc">Lançado: 00/00/0000 <span class="download-tag">1.0.0</span></div>
+                <div class="download-desc">LANÇADO <span class="download-tag">00/00/0000</span></div>
                 <div class="download-desc">Textura para o TAG FORCE 2.</div>
                 <div class="download-desc">Ainda vou postar no site esse conteúdo.</div>
                 <div class="download-btns">
@@ -477,7 +481,7 @@ const modalContents = {
                     <div class="download-tag tag-zipado">ZIPADO</div>
                     <div class="download-tag">YuujiPlay</div>
                 </div>
-                <div class="download-desc">Lançado: 00/00/0000 <span class="download-tag">1.0.0</span></div>
+                <div class="download-desc">LANÇADO <span class="download-tag">00/00/0000</span></div>
                 <div class="download-desc">Textura para o TAG FORCE 1.</div>
                 <div class="download-desc">Ainda vou postar no site esse conteúdo.</div>
                 <div class="download-btns">
@@ -499,7 +503,7 @@ const modalContents = {
                     <div class="download-tag tag-feminina">VERSÃO FEMININA</div>
                     <div class="download-tag">YuujiPlay</div>
                 </div>
-                <div class="download-desc">Lançado: 00/00/0000 <span class="download-tag">1.0.0</span></div>
+                <div class="download-desc">LANÇADO <span class="download-tag">00/00/0000</span></div>
                 <div class="download-desc">Textura para o TAG FORCE 1.</div>
                 <div class="download-desc">Ainda vou postar no site esse conteúdo.</div>
                 <div class="download-btns">
@@ -515,7 +519,7 @@ const modalContents = {
                     <div class="download-tag tag-mapa">MAPA</div>
                     <div class="download-tag">YuujiPlay</div>
                 </div>
-                <div class="download-desc">Lançado: 00/00/0000 <span class="download-tag">1.0.0</span></div>
+                <div class="download-desc">LANÇADO <span class="download-tag">00/00/0000</span></div>
                 <div class="download-desc">Textura para o TAG FORCE 1.</div>
                 <div class="download-desc">Ainda vou postar no site esse conteúdo.</div>
                 <div class="download-btns">
