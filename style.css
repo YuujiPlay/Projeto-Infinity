@@ -1299,7 +1299,6 @@ body {
     right: 1.2rem;
   }
 }
-
 /* === ESTILO DO MENU DE OPÇÕES (estilo Tag Force / menu de jogo) === */
 .options-menu {
     display: flex;
@@ -1307,7 +1306,6 @@ body {
     gap: 12px;
     padding: 10px 0;
 }
-
 .option-item {
     background: rgba(255, 215, 0, 0.08); /* fundo sutil dourado */
     border: 2px solid #4169e1; /* azul de seleção clássico do Tag Force */
@@ -1327,53 +1325,44 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 .option-item:hover {
     background: rgba(65, 105, 225, 0.35);
     border-color: #ffd700; /* dourado no hover */
     transform: translateX(8px) scale(1.02);
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
 }
-
 .option-item[data-status="liberado"] {
     border-color: #10b981;
     background: rgba(16, 185, 129, 0.12);
 }
-
 .option-item[data-status="liberado"]:hover {
     border-color: #059669;
     box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
 }
-
 .option-item[data-status="fechado"] {
     border-color: #6b7280;
     opacity: 0.85;
 }
-
 .option-item[data-status="cancelado"] {
     border-color: #ef4444;
     opacity: 0.75;
     cursor: not-allowed;
 }
-
 .option-item[data-status="cancelado"]:hover {
     transform: none;
     box-shadow: none;
 }
-
 .option-icon {
     font-size: 1.6rem;
     min-width: 45px;
     text-align: center;
     color: var(--accent);
 }
-
 .option-text {
     flex: 1;
     text-align: left;
     font-size: 1rem;
 }
-
 .option-link {
     background: linear-gradient(90deg, var(--accent), var(--primary));
     color: #000;
@@ -1385,12 +1374,10 @@ body {
     min-width: 110px;
     text-align: center;
 }
-
 .option-link:hover {
     background: var(--accent);
     transform: scale(1.08);
 }
-
 .option-status {
     width: 40px;
     height: 40px;
@@ -1402,68 +1389,57 @@ body {
     background: rgba(0,0,0,0.4);
     border: 1px solid var(--muted);
 }
-
 .option-item[data-status="liberado"] .option-status {
     background: #10b981;
     border-color: #059669;
 }
-
 .option-item[data-status="fechado"] .option-status {
     background: #6b7280;
     border-color: #4b5563;
 }
-
 .option-item[data-status="cancelado"] .option-status {
     background: #ef4444;
     border-color: #b91c1c;
 }
-
 /* ────────────────────────────────────────────────
    REDUÇÃO ESPECÍFICA PARA MOBILE (≤ 480px)
    ──────────────────────────────────────────────── */
 @media (max-width: 480px) {
     .options-menu {
-        gap: 8px;              /* menos espaço entre itens */
+        gap: 8px; /* menos espaço entre itens */
         padding: 8px 0;
     }
-
     .option-item {
-        padding: 12px 12px;    /* padding horizontal ainda menor para aliviar compressão */
-        font-size: 0.82rem;    /* base menor */
-        gap: 6px;              /* gap interno reduzido */
+        padding: 12px 12px; /* padding horizontal ainda menor para aliviar compressão */
+        font-size: 0.82rem; /* base menor */
+        gap: 6px; /* gap interno reduzido */
         border-width: 1.5px;
         min-height: 52px;
     }
-
     .option-icon {
         font-size: 1.3rem;
         min-width: 36px;
     }
-
     .option-text {
-        font-size: 0.78rem;    /* TÍTULOS MENOR (era 0.86rem) — principal ajuste pedido */
-        line-height: 1.2;      /* melhora legibilidade em texto pequeno */
+        font-size: 0.78rem; /* TÍTULOS MENOR (era 0.86rem) — principal ajuste pedido */
+        line-height: 1.2; /* melhora legibilidade em texto pequeno */
     }
-
     .option-link {
         padding: 6px 10px;
-        min-width: 85px;       /* botão ACESSAR um pouco menor */
+        min-width: 85px; /* botão ACESSAR um pouco menor */
         font-size: 0.76rem;
     }
-
     .option-status {
-        width: 30px;           /* status menor para não apertar tanto */
+        width: 30px; /* status menor para não apertar tanto */
         height: 30px;
         font-size: 1.05rem;
         border-radius: 6px;
     }
-
     /* Hover mais discreto no mobile para não interferir em touch */
     .option-item:hover {
         transform: translateX(4px) scale(1.01);
     }
 }
-
 /* Ainda mais compacto em telas muito pequenas (≤ 360px) */
 @media (max-width: 360px) {
     .option-item {
@@ -1486,5 +1462,98 @@ body {
         width: 28px;
         height: 28px;
         font-size: 1rem;
+    }
+}
+
+/* ────────────────────────────────────────────────
+   ESTILOS PARA O MODAL NOVIDADES (últimas adições)
+   ──────────────────────────────────────────────── */
+
+/* Indicadores de disponibilidade */
+#disponivel {
+    background: #10b981;
+    color: white;
+    min-width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.6rem;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(16, 185, 129, 0.4);
+}
+
+#indisponivel {
+    background: #6b7280;
+    color: white;
+    min-width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.6rem;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(107, 114, 128, 0.4);
+}
+
+/* Força centralização dos cards no modal */
+.modal-card-wrapper {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 620px;
+    width: 100%;
+}
+
+/* Título "Créditos" em destaque */
+.credit-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.1rem;
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+/* Container dos nomes de créditos */
+.credit-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+/* Cada pill de crédito */
+.credit-pill {
+    display: inline-block;
+    background: rgba(245, 158, 11, 0.12);
+    color: var(--accent);
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.4;
+    text-align: center;
+    min-width: 120px;
+}
+
+/* Mobile: nomes um abaixo do outro */
+@media (max-width: 767px) {
+    .credit-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .credit-pill {
+        width: 80%;
+        max-width: 220px;
     }
 }
