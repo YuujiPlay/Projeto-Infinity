@@ -800,7 +800,7 @@ const modalContents = {
                     <div id="disponivel">✓</div>
                 </div>
                 
-                <div class="download-desc">LANÇAMENTO <span class="download-tag">00/00/00</span></div>
+                <div class="download-desc">TEXTURAS <span class="download-tag">EM BREVE..</span></div>
                 
                 <div class="download-btns" style="align-items: center; gap: 1.2rem;">
                     <a class="download-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">BAIXAR AGORA</a>
@@ -927,4 +927,5 @@ document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
             numerion.style.display = 'none';
         });
     }
+
 });
