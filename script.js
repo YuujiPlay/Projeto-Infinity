@@ -144,7 +144,7 @@ const modalContents = {
             <div class="page-card">
                 <h3 class="page-title">VAZIO</h3>
                 <div class="page-tag">EM BREVE..</div>
-                <a class="page-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">VISITAR</a>
+                <a class="page-btn" href="https://yuujiplay.github.io/YuujiPlay/" rel="noopener noreferrer">VISITAR</a>
                 <div class="page-icon icon-inativo">X</div>
             </div>
         `
@@ -746,31 +746,31 @@ const modalContents = {
                 <button class="option-item" data-status="liberado">
                     <span class="option-icon"><i class="fas fa-user"></i></span>
                     <span class="option-text">PERFIS</span>
-                    <a href="https://yuujiplay.github.io/Duelist-Perfis/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <a href="https://yuujiplay.github.io/Duelist-Perfis/" rel="noopener noreferrer" class="option-link">ACESSAR</a>
                     <span class="option-status"><i class="fas fa-check"></i></span>
                 </button>
                 <button class="option-item" data-status="fechado">
                     <span class="option-icon"><i class="fas fa-layer-group"></i></span>
                     <span class="option-text">DECK</span>
-                    <a href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <a href="https://yuujiplay.github.io/YuujiPlay/" rel="noopener noreferrer" class="option-link">ACESSAR</a>
                     <span class="option-status"><i class="fas fa-times"></i></span>
                 </button>
                 <button class="option-item" data-status="fechado">
                     <span class="option-icon"><i class="fas fa-trophy"></i></span>
                     <span class="option-text">TORNEIO</span>
-                    <a href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <a href="https://yuujiplay.github.io/YuujiPlay/" rel="noopener noreferrer" class="option-link">ACESSAR</a>
                     <span class="option-status"><i class="fas fa-times"></i></span>
                 </button>
                 <button class="option-item" data-status="fechado">
                     <span class="option-icon"><i class="fas fa-calendar-alt"></i></span>
                     <span class="option-text">EVENTO</span>
-                    <a href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <a href="https://yuujiplay.github.io/YuujiPlay/" rel="noopener noreferrer" class="option-link">ACESSAR</a>
                     <span class="option-status"><i class="fas fa-times"></i></span>
                 </button>
                 <button class="option-item" data-status="cancelado">
                     <span class="option-icon"><i class="fas fa-ban"></i></span>
                     <span class="option-text">EXTRA</span>
-                    <a href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <a href="https://yuujiplay.github.io/YuujiPlay/" rel="noopener noreferrer" class="option-link">ACESSAR</a>
                     <span class="option-status"><i class="fas fa-ban"></i></span>
                 </button>
             </div>
@@ -780,33 +780,30 @@ const modalContents = {
         title: 'NOVIDADES',
         content: `
             <div class="update-info">Informações atualizadas em 25/02/2026 às 01:00.</div>
-
             <!-- Card 1 -->
             <div class="download-card modal-card-wrapper">
                 <img class="download-img" src="https://cdn2.steamgriddb.com/hero_thumb/4456aec9905b5a9b14744d67d8e0e3ce.png" alt="Yu-Gi-Oh! Arc-V Tag Force Special">
                 <div class="download-title"><span>ATUALIZAÇÃO</span></div>
-
                 <div class="download-tag-container">
                     <div class="download-tag" style="background: #fbbf24; color: black;">ISO</div>
                     <div class="download-tag" style="background: #10b981; color: white;">TEXTURA</div>
                 </div>
-
                 <div class="download-desc"><span>TAG FORCE SPECIAL</span></div>
-                
-                <div class="download-desc">ISO COMPATÍVEL  <span class="download-tag">4.0.1</span></div>
-                
+               
+                <div class="download-desc">ISO COMPATÍVEL <span class="download-tag">4.0.1</span></div>
+               
                 <div class="download-btns" style="align-items: center; gap: 1.2rem;">
                     <a class="download-btn" href="https://drive.google.com/file/d/1MGEv1ThBxcL0EcYPZc_DEn4XIYL-Sn7z/view" target="_blank" rel="noopener noreferrer">BAIXAR AGORA</a>
                     <div id="disponivel">✓</div>
                 </div>
-                
+               
                 <div class="download-desc">TEXTURA <span class="download-tag">EM BREVE..</span></div>
-                
+               
                 <div class="download-btns" style="align-items: center; gap: 1.2rem;">
                     <a class="download-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">BAIXAR AGORA</a>
                     <div id="indisponivel">X</div>
                 </div>
-                
+               
                 <div class="download-desc" style="margin-top: 1.2rem;">
                     <div class="credit-title">CRÉDITOS</div>
                     <div class="credit-container">
@@ -815,7 +812,7 @@ const modalContents = {
                         <span class="credit-pill">ChrisFand</span>
                     </div>
                 </div>
-                
+               
                 <div class="download-desc">Fala galera, Yuuji na Área! Estou preparando o terreno para nossa nova atualização referente as texturas para o TAG FORCE SPECIAL, ainda não lancei e não pretendo dar data ainda.</div>
             </div>
         `
