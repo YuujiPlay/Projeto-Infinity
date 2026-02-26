@@ -743,11 +743,11 @@ const modalContents = {
                     <a href="https://discord.gg/mKFWm897hQ" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
                     <span class="option-status"><i class="fas fa-check"></i></span>
                 </button>
-                <button class="option-item" data-status="fechado">
+                <button class="option-item" data-status="liberado">
                     <span class="option-icon"><i class="fas fa-user"></i></span>
                     <span class="option-text">PERFIS</span>
-                    <a href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
-                    <span class="option-status"><i class="fas fa-times"></i></span>
+                    <a href="https://yuujiplay.github.io/Duelist-Perfis/" target="_blank" rel="noopener noreferrer" class="option-link">ACESSAR</a>
+                    <span class="option-status"><i class="fas fa-check"></i></span>
                 </button>
                 <button class="option-item" data-status="fechado">
                     <span class="option-icon"><i class="fas fa-layer-group"></i></span>
@@ -800,7 +800,7 @@ const modalContents = {
                     <div id="disponivel">✓</div>
                 </div>
                 
-                <div class="download-desc">TEXTURAS <span class="download-tag">EM BREVE..</span></div>
+                <div class="download-desc">TEXTURA <span class="download-tag">EM BREVE..</span></div>
                 
                 <div class="download-btns" style="align-items: center; gap: 1.2rem;">
                     <a class="download-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">BAIXAR AGORA</a>
@@ -927,5 +927,4 @@ document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
             numerion.style.display = 'none';
         });
     }
-
 });
