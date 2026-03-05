@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YuujiPlay</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Fonte Roboto Mono - Mais gamer, limpa e altamente visível -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Aplicação da nova fonte em todos os textos que eram Press Start 2P / VT323 -->
+    <style>
+        .brand,
+        .section-title,
+        .project-title,
+        .page-title,
+        .problem-title,
+        .download-title,
+        .notif-date,
+        .member-info-title,
+        .credit-title,
+        .option-item,
+        .credit-pill {
+            font-family: 'Roboto Mono', monospace !important;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+    </style>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,21 +34,18 @@
 <header class="topbar">
     <div class="left-brand">
         <div class="status-dot"></div>
-        <!-- Clique aqui alterna o tema -->
         <span class="brand" id="theme-toggle">YuujiPlay</span>
     </div>
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
         <i class="fas fa-bars"></i>
     </button>
     <div class="topbar-menu" id="topbarMenu">
-        <!-- 1. Redes sociais -->
         <div class="right-social">
             <a href="https://discord.com/invite/ZZJsWxCCpD" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
             <a href="https://www.facebook.com/YuujiPlay" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/yuujiplay" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
             <a href="https://x.com/YuujiPlay" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
         </div>
-        <!-- 2. Links centrais -->
         <div class="center-links">
             <a class="top-card" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-youtube"></i>
@@ -46,16 +65,15 @@
             <div class="top-card">
                 <i class="fas fa-users"></i>
                 <span>Domingo: </span>
-                <div class="members-count-gradient">??:??</div>
+                <div class="members-count-gradient">14:00</div>
                 <div class="badge">LIVE</div>
             </div>
         </div>
-        <!-- 3. Painel direito (apenas mobile) -->
         <section class="panel right-panel mobile-only-panel">
             <button class="menu-btn" data-modal="menu_duelista">OPÇÕES</button>
             <button class="menu-btn" data-modal="notificacoes">
                 NOTIFICAÇÕES
-                <div class="numerion">3</div>
+                <div class="numerion">4</div>
             </button>
             <button class="menu-btn" data-modal="comunicados">
                 COMUNICADOS
@@ -75,7 +93,6 @@
             </button>
             <button class="menu-btn" data-modal="servidores">SERVIDORES</button>
         </section>
-        <!-- 4. Botão Fechar Menu (apenas mobile) -->
         <button class="close-menu-btn">Fechar Menu</button>
     </div>
 </header>
@@ -83,6 +100,10 @@
     <section class="panel left-panel">
         <button class="menu-btn" data-modal="equipe">EQUIPE</button>
         <button class="menu-btn" data-modal="projetos">PROJETOS</button>
+        <button class="menu-btn" data-modal="tutoriais">
+            TUTORIAIS
+            <div class="numerion">4</div>
+        </button>
         <button class="menu-btn" data-modal="contrib">CONTRIBUÍDORES</button>
         <button class="menu-btn" data-modal="divulg">DIVULGAÇÕES</button>
         <button class="menu-btn" data-modal="membros">MEMBROS</button>
@@ -175,12 +196,11 @@
             <button data-modal="baixar_skins">SKINS</button>
         </div>
     </section>
-    <!-- Painel direito visível no desktop -->
     <section class="panel right-panel">
         <button class="menu-btn" data-modal="menu_duelista">OPÇÕES</button>
         <button class="menu-btn" data-modal="notificacoes">
             NOTIFICAÇÕES
-            <div class="numerion">3</div>
+            <div class="numerion">4</div>
         </button>
         <button class="menu-btn" data-modal="comunicados">
             COMUNICADOS
@@ -215,6 +235,7 @@
 </div>
 <div id="notification" class="notification hidden" role="alert">Copiado para a área de transferência!</div>
 <div class="menu-overlay hidden" id="menuOverlay"></div>
+
 <script src="script.js"></script>
 </body>
 </html>

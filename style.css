@@ -1003,7 +1003,7 @@ body {
     .topbar-menu {
         display: none;
         position: absolute;
-        top: 0%;
+        top: 100%;
         left: 0;
         right: 0;
         background: var(--panel);
@@ -1464,11 +1464,9 @@ body {
         font-size: 1rem;
     }
 }
-
 /* ────────────────────────────────────────────────
    ESTILOS PARA O MODAL NOVIDADES (últimas adições)
    ──────────────────────────────────────────────── */
-
 /* Indicadores de disponibilidade */
 #disponivel {
     background: #10b981;
@@ -1484,7 +1482,6 @@ body {
     justify-content: center;
     box-shadow: 0 2px 6px rgba(16, 185, 129, 0.4);
 }
-
 #indisponivel {
     background: #6b7280;
     color: white;
@@ -1499,7 +1496,6 @@ body {
     justify-content: center;
     box-shadow: 0 2px 6px rgba(107, 114, 128, 0.4);
 }
-
 /* Força centralização dos cards no modal */
 .modal-card-wrapper {
     display: block !important;
@@ -1508,7 +1504,6 @@ body {
     max-width: 620px;
     width: 100%;
 }
-
 /* Título "Créditos" em destaque */
 .credit-title {
     font-family: 'Press Start 2P', cursive;
@@ -1519,7 +1514,6 @@ body {
     margin-bottom: 0.8rem;
     text-align: center;
 }
-
 /* Container dos nomes de créditos */
 .credit-container {
     display: flex;
@@ -1528,7 +1522,6 @@ body {
     gap: 1rem;
     margin: 0.5rem 0 1rem 0;
 }
-
 /* Cada pill de crédito */
 .credit-pill {
     display: inline-block;
@@ -1543,7 +1536,6 @@ body {
     text-align: center;
     min-width: 120px;
 }
-
 /* Mobile: nomes um abaixo do outro */
 @media (max-width: 767px) {
     .credit-container {
@@ -1551,9 +1543,76 @@ body {
         align-items: center;
         gap: 0.8rem;
     }
-    
+   
     .credit-pill {
         width: 80%;
         max-width: 220px;
+    }
+}
+
+/* Estilos para Tutoriais (reutilizando classes existentes + poucas novas) */
+.tutorial-card {
+    background: var(--panel-2);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border-glow);
+}
+
+.tutorial-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.youtube-icon {
+    color: #ff0000; /* Vermelho YouTube */
+    font-size: 1.8rem;
+}
+
+.assistir-btn {
+    background: #ff0000; /* Vermelho YouTube */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    margin-left: auto;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.assistir-btn:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
+
+/* Correção principal: forçar centralização das tags no modal (incluindo NOVIDADES) */
+#modal-body .download-tag-container {
+    justify-content: center !important;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    margin: 0.75rem 0 1rem;
+}
+
+/* Garante que as tags não quebrem o layout em mobile */
+#modal-body .download-tag {
+    flex-shrink: 0;
+}
+
+/* Mobile: Ajustes para telas menores */
+@media (max-width: 767px) {
+    .tutorial-header {
+        justify-content: center;
+        text-align: center;
+    }
+    .assistir-btn {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    /* Reforço para tags no mobile dentro do modal */
+    #modal-body .download-tag-container {
+        justify-content: center !important;
     }
 }

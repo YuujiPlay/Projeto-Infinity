@@ -1,6 +1,7 @@
 const modalElement = document.getElementById('modal');
 const modalBody = document.getElementById('modal-body');
 const notification = document.getElementById('notification');
+
 const modalContents = {
     projetos: {
         title: 'PROJETOS',
@@ -533,7 +534,15 @@ const modalContents = {
     notificacoes: {
         title: 'NOTIFICAÇÕES',
         content: `
-            <div class="update-info">Informações atualizadas em 23/02/2026 às 23:00.</div>
+            <div class="update-info">Informações atualizadas em 04/03/2026 às 21:00.</div>
+            <div class="notif-card">
+                <div class="notif-title">
+                    <span class="notif-date">04/03/2026</span>
+                    <div class="notif-badge badge-admin">Admin</div>
+                </div>
+                <div class="notif-divider"></div>
+                <p class="notif-desc">Olá amigos, eu adicionei novos recursos ao site e espero que gostem.</p>
+            </div>
             <div class="notif-card">
                 <div class="notif-title">
                     <span class="notif-date">23/02/2026</span>
@@ -789,21 +798,16 @@ const modalContents = {
                     <div class="download-tag" style="background: #10b981; color: white;">TEXTURA</div>
                 </div>
                 <div class="download-desc"><span>TAG FORCE SPECIAL</span></div>
-               
                 <div class="download-desc">ISO COMPATÍVEL <span class="download-tag">4.0.1</span></div>
-               
                 <div class="download-btns" style="align-items: center; gap: 1.2rem;">
                     <a class="download-btn" href="https://drive.google.com/file/d/1MGEv1ThBxcL0EcYPZc_DEn4XIYL-Sn7z/view" target="_blank" rel="noopener noreferrer">BAIXAR AGORA</a>
                     <div id="disponivel">✓</div>
                 </div>
-               
                 <div class="download-desc">TEXTURA <span class="download-tag">EM BREVE..</span></div>
-               
                 <div class="download-btns" style="align-items: center; gap: 1.2rem;">
                     <a class="download-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">BAIXAR AGORA</a>
                     <div id="indisponivel">X</div>
                 </div>
-               
                 <div class="download-desc" style="margin-top: 1.2rem;">
                     <div class="credit-title">CRÉDITOS</div>
                     <div class="credit-container">
@@ -812,17 +816,92 @@ const modalContents = {
                         <span class="credit-pill">ChrisFand</span>
                     </div>
                 </div>
-               
                 <div class="download-desc">Fala galera, Yuuji na Área! Estou preparando o terreno para nossa nova atualização referente as texturas para o TAG FORCE SPECIAL, ainda não lancei e não pretendo dar data ainda.</div>
+            </div>
+        `
+    },
+    tutoriais: {
+        title: 'TUTORIAIS',
+        content: `
+            <div class="update-info">Tutoriais que podem ajudar quem está querendo utilizar os jogos e texturas do Projeto Infinity.</div>
+            
+            <!-- Card 1 -->
+            <div class="tutorial-card">
+                <div class="tutorial-header">
+                    <i class="fab fa-youtube youtube-icon"></i>
+                    <h3 class="project-title">Passo a Passo do Projeto</h3>
+                    <a href="https://youtu.be/jUbhlur7WX8" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
+                    <div class="download-tag">ISO</div>
+                    <div class="download-tag">TEXTURA</div>
+                    <div class="download-tag">FONT</div>
+                    <div class="download-tag">CHEATS</div>
+                    <div class="download-tag">BAIXAR</div>
+                    <div class="download-tag">INSTALAR</div>
+                    <div class="download-tag">2026</div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="tutorial-card">
+                <div class="tutorial-header">
+                    <i class="fab fa-youtube youtube-icon"></i>
+                    <h3 class="project-title">Passo a Passo do Projeto</h3>
+                    <a href="https://youtu.be/Y2s06fFWHmg" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
+                    <div class="download-tag">ISO</div>
+                    <div class="download-tag">TEXTURA</div>
+                    <div class="download-tag">FONT</div>
+                    <div class="download-tag">CHEATS</div>
+                    <div class="download-tag">BAIXAR</div>
+                    <div class="download-tag">INSTALAR</div>
+                    <div class="download-tag">2025</div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="tutorial-card">
+                <div class="tutorial-header">
+                    <i class="fab fa-youtube youtube-icon"></i>
+                    <h3 class="project-title">Cheat's no PPSSPP</h3>
+                    <a href="https://youtu.be/0yTz7_VJvjo" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
+                    <div class="download-tag">CHEATS</div>
+                    <div class="download-tag">BAIXAR</div>
+                    <div class="download-tag">INSTALAR</div>
+                    <div class="download-tag">2025</div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="tutorial-card">
+                <div class="tutorial-header">
+                    <i class="fab fa-youtube youtube-icon"></i>
+                    <h3 class="project-title">Tag Force 1 Definitivo</h3>
+                    <a href="https://youtu.be/5ep5gfNPSok" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
+                    <div class="download-tag">ISO</div>
+                    <div class="download-tag">TEXTURA</div>
+                    <div class="download-tag">BAIXAR</div>
+                    <div class="download-tag">INSTALAR</div>
+                    <div class="download-tag">2025</div>
+                </div>
             </div>
         `
     }
 };
+
+// ==================== EVENTOS DOS BOTÕES ====================
 document.querySelectorAll('[data-modal]').forEach(button => {
     button.addEventListener('click', () => {
         openModal(button.dataset.modal);
     });
 });
+
 function openModal(type) {
     const data = modalContents[type] || { title: 'Conteúdo em construção', content: '<p>Em breve mais conteúdo aqui.</p>' };
     modalBody.innerHTML = `
@@ -835,18 +914,22 @@ function openModal(type) {
     `;
     modalElement.classList.remove('hidden');
 }
+
 function closeModal() {
     modalElement.classList.add('hidden');
 }
+
 document.querySelector('.close-btn').addEventListener('click', closeModal);
 modalElement.addEventListener('click', e => {
     if (e.target === modalElement) closeModal();
 });
+
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && !modalElement.classList.contains('hidden')) {
         closeModal();
     }
 });
+
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
         notification.textContent = 'Chave PIX copiada com sucesso!';
@@ -859,27 +942,36 @@ function copyToClipboard(text) {
         console.error('Falha ao copiar:', err);
     });
 }
+
+// ==================== CAROUSEL ====================
 const carousel = document.getElementById('carousel');
 const cards = carousel.querySelectorAll('.game-card');
 let currentIndex = 0;
 const totalCards = cards.length;
+
 function showCard(index) {
     cards.forEach(card => card.classList.remove('active'));
     cards[index].classList.add('active');
 }
+
 function nextSlide() {
     currentIndex = (currentIndex + 1) % totalCards;
     showCard(currentIndex);
 }
+
 showCard(0);
 let autoInterval = setInterval(nextSlide, 5000);
+
 carousel.addEventListener('mouseenter', () => clearInterval(autoInterval));
 carousel.addEventListener('mouseleave', () => {
     autoInterval = setInterval(nextSlide, 5000);
 });
+
+// ==================== MENU MOBILE ====================
 const menuToggle = document.querySelector('.menu-toggle');
 const topbarMenu = document.getElementById('topbarMenu');
 const menuOverlay = document.getElementById('menuOverlay');
+
 function toggleMenu() {
     const isOpen = topbarMenu.classList.toggle('active');
     menuOverlay.classList.toggle('hidden', !isOpen);
@@ -893,30 +985,38 @@ function toggleMenu() {
         icon.classList.add('fa-bars');
     }
 }
+
 menuToggle.addEventListener('click', toggleMenu);
 menuOverlay.addEventListener('click', toggleMenu);
+
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && topbarMenu.classList.contains('active')) {
         toggleMenu();
     }
 });
+
 // Listener para o botão "Fechar Menu"
 document.querySelector('.close-menu-btn')?.addEventListener('click', toggleMenu);
-// Alternar tema ao clicar no "YuujiPlay" (brand)
+
+// ==================== TEMA ====================
 const themeToggle = document.getElementById('theme-toggle');
 const html = document.documentElement;
+
 function setTheme(theme) {
     html.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
 }
+
 const savedTheme = localStorage.getItem('theme') || 'dark';
 setTheme(savedTheme);
+
 themeToggle.addEventListener('click', () => {
     const current = html.getAttribute('data-theme') || 'dark';
     const newTheme = current === 'dark' ? 'classic' : 'dark';
     setTheme(newTheme);
 });
-// Nova funcionalidade: Esconder numerion ao clicar no botão/link correspondente
+
+// ==================== ESCONDER NUMERION AO CLICAR ====================
 document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
     const numerion = element.querySelector('.numerion');
     if (numerion) {
