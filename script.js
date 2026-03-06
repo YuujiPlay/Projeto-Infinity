@@ -534,15 +534,7 @@ const modalContents = {
     notificacoes: {
         title: 'NOTIFICAÇÕES',
         content: `
-            <div class="update-info">Informações atualizadas em 04/03/2026 às 21:00.</div>
-            <div class="notif-card">
-                <div class="notif-title">
-                    <span class="notif-date">04/03/2026</span>
-                    <div class="notif-badge badge-admin">Admin</div>
-                </div>
-                <div class="notif-divider"></div>
-                <p class="notif-desc">Olá amigos, eu adicionei novos recursos ao site e espero que gostem.</p>
-            </div>
+            <div class="update-info">Informações atualizadas em 23/02/2026 às 23:00.</div>
             <div class="notif-card">
                 <div class="notif-title">
                     <span class="notif-date">23/02/2026</span>
@@ -591,113 +583,190 @@ const modalContents = {
             </div>
         `
     },
+
     problemas: {
         title: 'PROBLEMAS',
         content: `
             <div class="update-info">Informações atualizadas em 23/02/2026 às 23:00.</div>
-            <div class="notif-card">
-                <div class="notif-title">
-                    <span class="notif-date">23/02/2026</span>
-                    <div class="notif-badge badge-admin">Admin</div>
+
+            <!-- Card Principal 1 -->
+            <div class="problem-main-card">
+                <div class="project-card">
+                  <h3 class="project-title">REPORTADO: </h3>
+                  <div class="notif-badge badge-sophya">23/02/26</div>
                 </div>
-                <div class="notif-divider"></div>
-                <h3 class="problem-title">TAG FORCE 1</h3>
-                <p class="problem-desc">Estou corrigindo o seguinte card reportado para próxima atualização das texturas.</p>
-                <div class="problem-report-card">
-                    <span class="problem-subcard">MiniCard:</span>
-                    <span class="problem-card-name">Designador das Trevas</span>
-                    <span class="problem-status status-reportado">REPORTADO</span>
-                    <span class="problem-status status-confirmado">CONFIRMADO</span>
-                </div>
+                <div class="problem-title-highlight">Jogo:</div>
+                <div class="status-badge status-andamento">Tag Force 1</div>
+                <div class="problem-title-highlight">Problema:</div>
+                <div class="problem-subcard">Textura da mini Carta</div>
+                <div class="problem-title-highlight">Nome:</div>
+                <div class="problem-card-name">Designador das Trevas</div>
+                <div class="problem-title-highlight">Status:</div>
+                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
-            <div class="notif-card">
-                <div class="notif-title">
-                    <span class="notif-date">20/02/2026</span>
-                    <div class="notif-badge badge-admin">Admin</div>
+
+            <!-- Card Principal 2 -->
+            <div class="problem-main-card">
+                <div class="project-card">
+                  <h3 class="project-title">REPORTADO: </h3>
+                  <div class="notif-badge badge-sophya">20/02/26</div>
                 </div>
-                <div class="notif-divider"></div>
-                <h3 class="problem-title">TAG FORCE 4</h3>
-                <p class="problem-desc">Estou corrigindo os seguintes cards reportados para próxima atualização das texturas.</p>
-                <div class="problem-report-card">
-                    <span class="problem-subcard">FixedCard:</span>
-                    <span class="problem-card-name">"B" Negra Brilhante</span>
-                    <span class="problem-status status-reportado">REPORTADO</span>
-                    <span class="problem-status status-confirmado">CONFIRMADO</span>
-                </div>
-                <div class="problem-report-card">
-                    <span class="problem-subcard">MiniCard:</span>
-                    <span class="problem-card-name">Oferenda Derradeira</span>
-                    <span class="problem-status status-reportado">REPORTADO</span>
-                    <span class="problem-status status-confirmado">CONFIRMADO</span>
-                </div>
-                <div class="problem-report-card">
-                    <span class="problem-subcard">GrandCard:</span>
-                    <span class="problem-card-name">Regular</span>
-                    <span class="problem-status status-reportado">REPORTADO</span>
-                    <span class="problem-status status-confirmado">CONFIRMADO</span>
-                </div>
+                <div class="problem-title-highlight">Jogo:</div>
+                <div class="status-badge status-andamento">Tag Force 4</div>
+                <div class="problem-title-highlight">Problema:</div>
+                <div class="problem-subcard">Textura de carta Fixa</div>
+                <div class="problem-title-highlight">Nome:</div>
+                <div class="problem-card-name">"B" Negra Brilhante</div>
+                <div class="problem-title-highlight">Status:</div>
+                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
-            <div class="notif-card">
-                <div class="notif-title">
-                    <span class="notif-date">20/02/2026</span>
-                    <div class="notif-badge badge-admin">Admin</div>
+
+            <!-- Card Principal 3 -->
+            <div class="problem-main-card">
+                <div class="project-card">
+                  <h3 class="project-title">REPORTADO: </h3>
+                  <div class="notif-badge badge-sophya">20/02/26</div>
                 </div>
-                <div class="notif-divider"></div>
-                <h3 class="problem-title">TAG FORCE 1</h3>
-                <p class="problem-desc">Estou corrigindo os seguintes cards reportados para próxima atualização das texturas.</p>
-                <div class="problem-report-card">
-                    <span class="problem-subcard">Censurado:</span>
-                    <span class="problem-card-name">Reviver Monstro</span>
-                    <span class="problem-status status-reportado">REPORTADO</span>
-                    <span class="problem-status status-confirmado">CONFIRMADO</span>
-                </div>
-                <div class="problem-report-card">
-                    <span class="problem-subcard">MiniCard:</span>
-                    <span class="problem-card-name">Navio Yomi</span>
-                    <span class="problem-status status-reportado">REPORTADO</span>
-                    <span class="problem-status status-confirmado">CONFIRMADO</span>
-                </div>
-                <div class="problem-report-card">
-                    <span class="problem-subcard">MiniCard:</span>
-                    <span class="problem-card-name">Gagagigo</span>
-                    <span class="problem-status status-reportado">REPORTADO</span>
-                    <span class="problem-status status-confirmado">CONFIRMADO</span>
-                </div>
-                <div class="problem-report-card">
-                    <span class="problem-subcard">MiniCard:</span>
-                    <span class="problem-card-name">Ojama Verde</span>
-                    <span class="problem-status status-reportado">REPORTADO</span>
-                    <span class="problem-status status-confirmado">CONFIRMADO</span>
-                </div>
+                <div class="problem-title-highlight">Jogo:</div>
+                <div class="status-badge status-andamento">Tag Force 4</div>
+                <div class="problem-title-highlight">Problema:</div>
+                <div class="problem-subcard">Textura da mini Carta</div>
+                <div class="problem-title-highlight">Nome:</div>
+                <div class="problem-card-name">Oferenda Derradeira</div>
+                <div class="problem-title-highlight">Status:</div>
+                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
-            <div class="notif-card">
-                <div class="notif-title">
-                    <span class="notif-date">20/02/2026</span>
-                    <div class="notif-badge badge-admin">Admin</div>
+
+            <!-- Card Principal 4 -->
+            <div class="problem-main-card">
+                <div class="project-card">
+                  <h3 class="project-title">REPORTADO: </h3>
+                  <div class="notif-badge badge-sophya">20/02/26</div>
                 </div>
-                <div class="notif-divider"></div>
-                <h3 class="problem-title">TAG FORCE SPECIAL</h3>
-                <p class="problem-desc">Já estou ciente das texturas dos CARD's (mini/small) que não estão carregando a imagem.</p>
-                <div class="problem-report-card">
-                    <span class="problem-status status-encontrado">ENCONTRADO</span>
-                    <span class="problem-status status-confirmado">CONFIRMADO</span>
-                </div>
+                <div class="problem-title-highlight">Jogo:</div>
+                <div class="status-badge status-andamento">Tag Force 4</div>
+                <div class="problem-title-highlight">Problema:</div>
+                <div class="problem-subcard">Textura da carta Grande</div>
+                <div class="problem-title-highlight">Nome:</div>
+                <div class="problem-card-name">Regular</div>
+                <div class="problem-title-highlight">Status:</div>
+                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
-            <div class="notif-card">
-                <div class="notif-title">
-                    <span class="notif-date">20/02/2026</span>
-                    <div class="notif-badge badge-admin">Admin</div>
+
+            <!-- Card Principal 5 -->
+            <div class="problem-main-card">
+                <div class="project-card">
+                  <h3 class="project-title">REPORTADO: </h3>
+                  <div class="notif-badge badge-sophya">20/02/26</div>
                 </div>
-                <div class="notif-divider"></div>
-                <h3 class="problem-title">TAG FORCE SPECIAL</h3>
-                <p class="problem-desc">Ainda não terminei de fazer as texturas dos personagens.</p>
-                <div class="problem-report-card">
-                    <span class="problem-status status-encontrado">ENCONTRADO</span>
-                    <span class="problem-status status-confirmado">CONFIRMADO</span>
+                <div class="problem-title-highlight">Jogo:</div>
+                <div class="status-badge status-andamento">Tag Force 1</div>
+                <div class="problem-title-highlight">Problema:</div>
+                <div class="problem-subcard">Textura com versão Censurada</div>
+                <div class="problem-title-highlight">Nome:</div>
+                <div class="problem-card-name">Reviver Monstro</div>
+                <div class="problem-title-highlight">Status:</div>
+                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-confirmado">CONFIRMADO</div>
+            </div>
+
+            <!-- Card Principal 6 -->
+            <div class="problem-main-card">
+                <div class="project-card">
+                  <h3 class="project-title">REPORTADO: </h3>
+                  <div class="notif-badge badge-sophya">20/02/26</div>
                 </div>
+                <div class="problem-title-highlight">Jogo:</div>
+                <div class="status-badge status-andamento">Tag Force 1</div>
+                <div class="problem-title-highlight">Problema:</div>
+                <div class="problem-subcard">Textura da mini Carta</div>
+                <div class="problem-title-highlight">Nome:</div>
+                <div class="problem-card-name">Navio Yomi</div>
+                <div class="problem-title-highlight">Status:</div>
+                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-confirmado">CONFIRMADO</div>
+            </div>
+
+            <!-- Card Principal 7 -->
+            <div class="problem-main-card">
+                <div class="project-card">
+                  <h3 class="project-title">REPORTADO: </h3>
+                  <div class="notif-badge badge-sophya">20/02/26</div>
+                </div>
+                <div class="problem-title-highlight">Jogo:</div>
+                <div class="status-badge status-andamento">Tag Force 1</div>
+                <div class="problem-title-highlight">Problema:</div>
+                <div class="problem-subcard">Textura da mini Carta</div>
+                <div class="problem-title-highlight">Nome:</div>
+                <div class="problem-card-name">Gagagigo</div>
+                <div class="problem-title-highlight">Status:</div>
+                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-confirmado">CONFIRMADO</div>
+            </div>
+
+            <!-- Card Principal 8 -->
+            <div class="problem-main-card">
+                <div class="project-card">
+                  <h3 class="project-title">REPORTADO: </h3>
+                  <div class="notif-badge badge-sophya">20/02/26</div>
+                </div>
+                <div class="problem-title-highlight">Jogo:</div>
+                <div class="status-badge status-andamento">Tag Force 1</div>
+                <div class="problem-title-highlight">Problema:</div>
+                <div class="problem-subcard">Textura da mini Carta</div>
+                <div class="problem-title-highlight">Nome:</div>
+                <div class="problem-card-name">Ojama Verde</div>
+                <div class="problem-title-highlight">Status:</div>
+                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-confirmado">CONFIRMADO</div>
+            </div>
+
+            <!-- Card Principal 9 -->
+            <div class="problem-main-card">
+                <div class="project-card">
+                  <h3 class="project-title">REPORTADO: </h3>
+                  <div class="notif-badge badge-sophya">20/02/26</div>
+                </div>
+                <div class="problem-title-highlight">Jogo:</div>
+                <div class="status-badge status-andamento">Tag Force Special</div>
+                <div class="problem-title-highlight">Problema:</div>
+                <div class="problem-subcard">Textura Geral</div>
+                <div class="problem-title-highlight">Nome:</div>
+                <div class="problem-card-name">As texturas dos (mini/small) as vezes não carrega.</div>
+                <div class="problem-title-highlight">Status:</div>
+                <div class="problem-status status-ignorado">IGNORADO</div>
+                <div class="member-info-card">
+                <div class="member-info-title">MOTIVO</div>
+                <p class="member-info-text">É um problema de emulação, as vezes algumas texturas não carregam, ainda não encontrei uma forma de resolver isso.</p>
+            </div>
+            </div>
+
+            <!-- Card Principal 10 -->
+            <div class="problem-main-card">
+                <div class="project-card">
+                  <h3 class="project-title">REPORTADO: </h3>
+                  <div class="notif-badge badge-sophya">20/02/26</div>
+                </div>
+                <div class="problem-title-highlight">Jogo:</div>
+                <div class="status-badge status-andamento">Tag Force Special</div>
+                <div class="problem-title-highlight">Problema:</div>
+                <div class="problem-subcard">Textura Geral</div>
+                <div class="problem-title-highlight">Nome:</div>
+                <div class="problem-card-name">Alguns personagens estão sem textura.</div>
+                <div class="problem-title-highlight">Status:</div>
+                <div class="problem-status status-ignorado">IGNORADO</div>
+                <div class="member-info-card">
+                <div class="member-info-title">MOTIVO</div>
+                <p class="member-info-text">Ainda não fiz todas as texturas, então é normal que muitos personagem ainda estejam sem, não é um problema na textura.</p>
+            </div>
             </div>
         `
     },
+
     recusados: {
         title: 'RECUSADOS',
         content: `
@@ -789,7 +858,6 @@ const modalContents = {
         title: 'NOVIDADES',
         content: `
             <div class="update-info">Informações atualizadas em 25/02/2026 às 01:00.</div>
-            <!-- Card 1 -->
             <div class="download-card modal-card-wrapper">
                 <img class="download-img" src="https://cdn2.steamgriddb.com/hero_thumb/4456aec9905b5a9b14744d67d8e0e3ce.png" alt="Yu-Gi-Oh! Arc-V Tag Force Special">
                 <div class="download-title"><span>ATUALIZAÇÃO</span></div>
@@ -823,13 +891,11 @@ const modalContents = {
     tutoriais: {
         title: 'TUTORIAIS',
         content: `
-            <div class="update-info">Tutoriais que podem ajudar quem está querendo utilizar os jogos e texturas do Projeto Infinity.</div>
-            
-            <!-- Card 1 -->
+            <div class="update-info">Tutoriais atualizados em 03/03/2026 às 11:51.</div>
             <div class="tutorial-card">
                 <div class="tutorial-header">
                     <i class="fab fa-youtube youtube-icon"></i>
-                    <h3 class="project-title">Passo a Passo do Projeto</h3>
+                    <h3 class="project-title">Projeto Infinity - Passo a Passo</h3>
                     <a href="https://youtu.be/jUbhlur7WX8" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
                 </div>
                 <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
@@ -842,12 +908,10 @@ const modalContents = {
                     <div class="download-tag">2026</div>
                 </div>
             </div>
-
-            <!-- Card 2 -->
             <div class="tutorial-card">
                 <div class="tutorial-header">
                     <i class="fab fa-youtube youtube-icon"></i>
-                    <h3 class="project-title">Passo a Passo do Projeto</h3>
+                    <h3 class="project-title">Projeto Infinity - Passo a Passo</h3>
                     <a href="https://youtu.be/Y2s06fFWHmg" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
                 </div>
                 <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
@@ -860,12 +924,10 @@ const modalContents = {
                     <div class="download-tag">2025</div>
                 </div>
             </div>
-
-            <!-- Card 3 -->
             <div class="tutorial-card">
                 <div class="tutorial-header">
                     <i class="fab fa-youtube youtube-icon"></i>
-                    <h3 class="project-title">Cheat's no PPSSPP</h3>
+                    <h3 class="project-title">Colocando Cheat's no PSP</h3>
                     <a href="https://youtu.be/0yTz7_VJvjo" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
                 </div>
                 <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
@@ -875,8 +937,6 @@ const modalContents = {
                     <div class="download-tag">2025</div>
                 </div>
             </div>
-
-            <!-- Card 4 -->
             <div class="tutorial-card">
                 <div class="tutorial-header">
                     <i class="fab fa-youtube youtube-icon"></i>
@@ -995,7 +1055,6 @@ document.addEventListener('keydown', e => {
     }
 });
 
-// Listener para o botão "Fechar Menu"
 document.querySelector('.close-menu-btn')?.addEventListener('click', toggleMenu);
 
 // ==================== TEMA ====================
