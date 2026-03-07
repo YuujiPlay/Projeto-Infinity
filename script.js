@@ -602,7 +602,7 @@ const modalContents = {
                 <div class="problem-title-highlight">Nome:</div>
                 <div class="problem-card-name">Designador das Trevas</div>
                 <div class="problem-title-highlight">Status:</div>
-                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-reportado">NÃO CORRIGIDO</div>
                 <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
 
@@ -619,7 +619,7 @@ const modalContents = {
                 <div class="problem-title-highlight">Nome:</div>
                 <div class="problem-card-name">"B" Negra Brilhante</div>
                 <div class="problem-title-highlight">Status:</div>
-                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-reportado">NÃO CORRIGIDO</div>
                 <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
 
@@ -636,7 +636,7 @@ const modalContents = {
                 <div class="problem-title-highlight">Nome:</div>
                 <div class="problem-card-name">Oferenda Derradeira</div>
                 <div class="problem-title-highlight">Status:</div>
-                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-reportado">NÃO CORRIGIDO</div>
                 <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
 
@@ -653,7 +653,7 @@ const modalContents = {
                 <div class="problem-title-highlight">Nome:</div>
                 <div class="problem-card-name">Regular</div>
                 <div class="problem-title-highlight">Status:</div>
-                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-reportado">NÃO CORRIGIDO</div>
                 <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
 
@@ -670,7 +670,7 @@ const modalContents = {
                 <div class="problem-title-highlight">Nome:</div>
                 <div class="problem-card-name">Reviver Monstro</div>
                 <div class="problem-title-highlight">Status:</div>
-                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-reportado">NÃO CORRIGIDO</div>
                 <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
 
@@ -687,7 +687,7 @@ const modalContents = {
                 <div class="problem-title-highlight">Nome:</div>
                 <div class="problem-card-name">Navio Yomi</div>
                 <div class="problem-title-highlight">Status:</div>
-                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-reportado">NÃO CORRIGIDO</div>
                 <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
 
@@ -704,7 +704,7 @@ const modalContents = {
                 <div class="problem-title-highlight">Nome:</div>
                 <div class="problem-card-name">Gagagigo</div>
                 <div class="problem-title-highlight">Status:</div>
-                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-reportado">NÃO CORRIGIDO</div>
                 <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
 
@@ -721,7 +721,7 @@ const modalContents = {
                 <div class="problem-title-highlight">Nome:</div>
                 <div class="problem-card-name">Ojama Verde</div>
                 <div class="problem-title-highlight">Status:</div>
-                <div class="problem-status status-reportado">REPORTADO</div>
+                <div class="problem-status status-reportado">NÃO CORRIGIDO</div>
                 <div class="problem-status status-confirmado">CONFIRMADO</div>
             </div>
 
@@ -1083,4 +1083,5 @@ document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
             numerion.style.display = 'none';
         });
     }
+
 });
