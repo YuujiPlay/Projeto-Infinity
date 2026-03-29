@@ -587,7 +587,29 @@ const modalContents = {
 problemas: {
     title: 'PROBLEMAS',
     content: `
-        <div class="update-info">Informações atualizadas em 23/02/2026 às 23:00.</div>
+        <div class="update-info">Informações atualizadas em 29/03/2026 às 15:40.</div>
+        <!-- Card Principal Fixado -->
+        <div class="problem-main-card">
+            <div class="project-card">
+              <h3 class="project-title">REPORTADO: </h3>
+              <div class="notif-badge badge-sophya">29/03/26</div>
+            </div>
+            <div class="problem-title-highlight">Jogo:</div>
+            <div class="jogo-badge problema-name">Tag Force 3</div>
+            <div class="problem-title-highlight">Problema:</div>
+            <div class="problem-subcard">Textura das cartas em small/smallANIME</div>
+            <div class="problem-title-highlight">Nome:</div>
+            <div class="problem-card-name">Jinzo</div>
+            <div class="problem-title-highlight">Status:</div>
+            <div class="problem-status status-corrigido">CORRIGIDO</div>
+            <div class="problem-status status-confirmado">CONFIRMADO</div>
+            <div class="profile-card">
+                <img class="profile-img" src="https://images.ygoprodeck.com/images/cards_cropped/77585513.jpg" alt="Corretiva">
+                <span class="profile-name">Para quem já tem as texturas instaladas, correção rapida:</span>
+                <a class="access-btn" href="https://mega.nz/file/vCpgwR5a#BGAmHhAV53VoY84QtVAIZVxtd6ZM7QuSZPNpjpB00ow" target="_blank" rel="noopener noreferrer">BAIXAR</a>
+                <div class="download-desc">Baixe o arquivo, extraia a pasta, pegue o arquivo "textures.ini" da sua preferencia e substiua o "textures.ini" localizado em suas texturas dentro da pasta "ULES01183".</div>
+            </div>
+        </div>
         <!-- Card Principal 1 -->
         <div class="problem-main-card">
             <div class="project-card">
