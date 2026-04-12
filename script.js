@@ -565,7 +565,15 @@ const modalContents = {
                     <div class="notif-badge badge-sophya">Sophya</div>
                 </div>
                 <div class="notif-divider"></div>
-                <p class="notif-desc">Erros técnicos de escritas podem aparecer, já que estamos refazendo tudo do zero novamente no site.</p>
+                <p class="notif-desc">Durante a migração dos dados do site antigo para o novo, pode ser que acabe aparecendo algum bug, peço que nos avise em nosso DISCORD em REPORT.</p>
+            </div>
+            <div class="notif-card">
+                <div class="notif-title">
+                    <span class="notif-date">20/02/2026</span>
+                    <div class="notif-badge badge-sophya">Sophya</div>
+                </div>
+                <div class="notif-divider"></div>
+                <p class="notif-desc">Erros nas escritas podem aparecer, já que estamos refazendo tudo no site do zero novamente.</p>
             </div>
         `
     },
@@ -579,7 +587,7 @@ const modalContents = {
                     <div class="notif-badge badge-sophya">Sophya</div>
                 </div>
                 <div class="notif-divider"></div>
-                <p class="notif-desc">Como o site principal e site do projeto estão sendo fundidos novamente, posso levar um tempo até o site ficar 100% otimizado para mobile.</p>
+                <p class="notif-desc">Como o site principal e do projeto estão sendo fundidos novamente em um só, pode levar um tempo até o site ficar 100% otimizado para mobile.</p>
             </div>
             <div class="notif-card">
                 <div class="notif-title">
