@@ -915,8 +915,6 @@ problemas: {
                     <div class="download-tag">TEXTURA</div>
                     <div class="download-tag">FONT</div>
                     <div class="download-tag">CHEATS</div>
-                    <div class="download-tag">BAIXAR</div>
-                    <div class="download-tag">INSTALAR</div>
                     <div class="download-tag">2026</div>
                 </div>
             </div>
@@ -931,8 +929,6 @@ problemas: {
                     <div class="download-tag">TEXTURA</div>
                     <div class="download-tag">FONT</div>
                     <div class="download-tag">CHEATS</div>
-                    <div class="download-tag">BAIXAR</div>
-                    <div class="download-tag">INSTALAR</div>
                     <div class="download-tag">2025</div>
                 </div>
             </div>
@@ -944,8 +940,6 @@ problemas: {
                 </div>
                 <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
                     <div class="download-tag">CHEATS</div>
-                    <div class="download-tag">BAIXAR</div>
-                    <div class="download-tag">INSTALAR</div>
                     <div class="download-tag">2025</div>
                 </div>
             </div>
@@ -958,8 +952,6 @@ problemas: {
                 <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
                     <div class="download-tag">ISO</div>
                     <div class="download-tag">TEXTURA</div>
-                    <div class="download-tag">BAIXAR</div>
-                    <div class="download-tag">INSTALAR</div>
                     <div class="download-tag">2025</div>
                 </div>
             </div>
