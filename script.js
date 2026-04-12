@@ -534,7 +534,15 @@ const modalContents = {
     notificacoes: {
         title: 'NOTIFICAÇÕES',
         content: `
-            <div class="update-info">Informações atualizadas em 23/02/2026 às 23:00.</div>
+            <div class="update-info">Informações atualizadas em 12/04/2026 às 08:00.</div>
+            <div class="notif-card">
+                <div class="notif-title">
+                    <span class="notif-date">12/04/2026</span>
+                    <div class="notif-badge badge-admin">Admin</div>
+                </div>
+                <div class="notif-divider"></div>
+                <p class="notif-desc">Devido alguns problemas pessoais, parei temporariamente os projetos, não desistir, só pausei por enquanto, pois não ando muito bem.</p>
+            </div>
             <div class="notif-card">
                 <div class="notif-title">
                     <span class="notif-date">23/02/2026</span>
