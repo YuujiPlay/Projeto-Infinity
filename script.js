@@ -33,7 +33,7 @@ const modalContents = {
             </div>
             <div class="project-card">
                 <h3 class="project-title">TAG FORCE 7</h3>
-                <div class="status-badge status-andamento">ANDAMENTO</div>
+                <div class="status-badge status-pausado">PAUSADO</div>
             </div>
         `
     },
