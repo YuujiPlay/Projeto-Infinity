@@ -6,7 +6,7 @@ const modalContents = {
     projetos: {
         title: 'PROJETOS',
         content: `
-            <div class="update-info">Informações atualizadas em 21/02/2026 às 23:00.</div>
+            <div class="update-info">Informações atualizadas em 30/03/2026 às 23:00.</div>
             <div class="project-card">
                 <h3 class="project-title">TAG FORCE 1</h3>
                 <div class="status-badge status-pausado">PAUSADO</div>
