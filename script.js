@@ -6,7 +6,7 @@ const modalContents = {
     projetos: {
         title: 'PROJETOS',
         content: `
-            <div class="update-info">Informações atualizadas em 30/03/2026 às 23:00.</div>
+            <div class="update-info">Você está acessando a aba de status das texturas, para baixar ISO's, vá em "TRADUÇÕES", o mesmo para "TEXTURAS".</div>
             <div class="project-card">
                 <h3 class="project-title">TAG FORCE 1</h3>
                 <div class="status-badge status-pausado">PAUSADO</div>
