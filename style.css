@@ -1628,3 +1628,109 @@ body {
     background: var(--status-andamento);
     color: black;
 }
+
+/* ====================== NOTIFICAÇÃO TEMPORÁRIA ====================== */
+.important-notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.important-notice.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.notice-card {
+    background: var(--panel);
+    border: 2px solid var(--accent);
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 520px;
+    padding: 1.75rem;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    animation: noticePop 0.5s ease;
+}
+
+@keyframes noticePop {
+    from {
+        transform: scale(0.7) translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+.notice-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--muted);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.notice-close:hover {
+    background: var(--close-btn-bg);
+    color: white;
+}
+
+.notice-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.35rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.notice-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    margin: 1rem 0;
+}
+
+.notice-body p {
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 1.02rem;
+    text-align: center;
+}
+
+.notice-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.notice-timer {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.notice-timer strong {
+    color: var(--accent);
+    font-weight: 700;
+}

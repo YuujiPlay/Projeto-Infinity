@@ -1104,3 +1104,46 @@ document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
         });
     }
 });
+
+// ====================== NOTIFICAÇÃO TEMPORÁRIA ======================
+function showImportantNotice() {
+    const notice = document.getElementById('important-notice');
+    const timerElement = document.getElementById('timer');
+    let timeLeft = 15;
+
+    // Mostrar a notificação
+    notice.classList.add('show');
+
+    // Timer regressivo
+    const countdown = setInterval(() => {
+        timeLeft--;
+        timerElement.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(countdown);
+            hideNotice();
+        }
+    }, 1000);
+
+    // Função para esconder
+    function hideNotice() {
+        notice.classList.remove('show');
+        clearInterval(countdown);
+    }
+
+    // Botão Fechar (X)
+    document.querySelector('.notice-close').addEventListener('click', hideNotice);
+
+    // Fechar ao clicar fora do card (opcional)
+    notice.addEventListener('click', (e) => {
+        if (e.target === notice) {
+            hideNotice();
+        }
+    });
+}
+
+// Mostrar a notificação automaticamente quando a página carregar
+window.addEventListener('load', () => {
+    // Pequeno delay para não aparecer junto com outros elementos
+    setTimeout(showImportantNotice, 800);
+});
