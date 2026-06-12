@@ -355,17 +355,6 @@ body {
     box-shadow: 0 1.25rem 3.75rem rgba(0,0,0,0.8);
     border: 1px solid var(--border-glow);
 }
-.modal-content::-webkit-scrollbar {
-    width: 0.625rem;
-}
-.modal-content::-webkit-scrollbar-track {
-    background: var(--panel-2);
-}
-.modal-content::-webkit-scrollbar-thumb {
-    background: linear-gradient(90deg, var(--accent), var(--primary));
-    border-radius: 0.3125rem;
-    border: 0.125rem solid var(--panel);
-}
 .hidden {
     display: none !important;
 }
@@ -993,6 +982,55 @@ body {
 }
 .center-links {
     justify-content: center !important;
+}
+
+/* ==================== SCROLLBARS PERSONALIZADAS ==================== */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--panel-2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--accent), var(--primary));
+    border-radius: 10px;
+    border: 2px solid var(--panel-2);
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--primary), #fbbf24);
+    box-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+}
+
+/* Scrollbar do modal (mais visível) */
+.modal-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    border: 2px solid var(--panel);
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--panel-2);
+}
+
+/* Tema Classic - ajuste fino */
+[data-theme="classic"] ::-webkit-scrollbar-thumb {
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
+}
+
+[data-theme="classic"] ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--accent), #00e5ff);
 }
 
 /* Ajustes responsivos */
@@ -1733,4 +1771,73 @@ body {
 .notice-timer strong {
     color: var(--accent);
     font-weight: 700;
+}
+
+/* ====================== BARRA DE PROGRESSO APOIA-ME ====================== */
+.progress-container {
+    background: var(--panel-2);
+    border: 1px solid var(--border-glow);
+    border-radius: 0.875rem;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.4);
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.progress-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.progress-percentage {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.progress-bar-bg {
+    height: 12px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 999px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    margin-bottom: 0.75rem;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+    border-radius: 999px;
+    transition: width 1.2s ease;
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.6);
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.progress-info strong {
+    color: var(--text);
+}
+
+.progress-dates {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+/* Efeito hover */
+.progress-container:hover .progress-bar-fill {
+    box-shadow: 0 0 16px rgba(245, 158, 11, 0.8);
 }

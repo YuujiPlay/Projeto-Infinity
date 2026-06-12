@@ -6,7 +6,7 @@ const modalContents = {
     projetos: {
         title: 'PROJETOS',
         content: `
-            <div class="update-info">Você está acessando a aba de status das texturas, para baixar ISO's, vá em "TRADUÇÕES", o mesmo para "TEXTURAS".</div>
+            <div class="update-info">Você está acessando a aba de status das texturas, para baixar ISO's, vá em "JOGOS PT-BR", o mesmo para "TEXTURAS".</div>
             <div class="project-card">
                 <h3 class="project-title">TAG FORCE 1</h3>
                 <div class="status-badge status-pausado">PAUSADO</div>
@@ -109,17 +109,32 @@ const modalContents = {
             </div>
         `
     },
-    apoia: {
-        title: 'APOIA-ME',
-        content: `
-            <div class="update-info">Informações atualizadas em 21/02/2026 às 23:00.</div>
-            <div class="apoia-card">
-                <i class="fas fa-qrcode apoia-icon"></i>
-                <div class="apoia-email">tatsuyayuuji9029@gmail.com</div>
-                <button class="apoia-btn" onclick="copyToClipboard('tatsuyayuuji9029@gmail.com')">COPIAR CHAVE PIX</button>
+apoia: {
+    title: 'APOIA-ME',
+    content: `
+        <div class="update-info">Informações atualizadas em 12/06/2026 às 19:45.</div>
+        <div class="apoia-card">
+            <i class="fas fa-qrcode apoia-icon"></i>
+            <div class="apoia-email">tatsuyayuuji9029@gmail.com</div>
+            <button class="apoia-btn" onclick="copyToClipboard('tatsuyayuuji9029@gmail.com')">COPIAR CHAVE PIX</button>
+        </div>
+
+        <!-- === BARRA DE PROGRESSO === -->
+        <div class="progress-container">
+            <div class="progress-header">
+                <span class="progress-title">Meta do Mês - Junho 2026</span>
+                <span class="progress-percentage">10%</span>
             </div>
-        `
-    },
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 10%"></div>
+            </div>
+            <div class="progress-info">
+                <span><strong>R$ 10,00</strong> de R$ 100,00</span>
+                <span class="progress-dates">01/06/2026 — 30/06/2026</span>
+            </div>
+        </div>
+    `
+},
     paginas: {
         title: 'PÁGINAS',
         content: `
@@ -153,7 +168,11 @@ const modalContents = {
     full_recomendacoes: {
         title: 'RECOMENDAÇÕES',
         content: `
-            <div class="update-info">Informações atualizadas em 21/02/2026 às 23:00.</div>
+            <div class="update-info">Informações atualizadas em 12/06/2026 às 20:00.</div>
+            <div class="profile-card">
+                <span class="profile-name">Digimon Story Time Stranger</span>
+                <a class="access-btn" href="https://store.steampowered.com/app/1984270/Digimon_Story_Time_Stranger/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
+            </div>
             <div class="profile-card">
                 <span class="profile-name">Scarlet Nexus</span>
                 <a class="access-btn" href="https://store.steampowered.com/app/775500/SCARLET_NEXUS/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
@@ -187,13 +206,13 @@ const modalContents = {
                 <a class="access-btn" href="https://store.steampowered.com/app/243470/Watch_Dogs/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
             </div>
             <div class="profile-card">
-                <span class="profile-name">Em Breve..</span>
-                <a class="access-btn" href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
+                <span class="profile-name">Meu Canal</span>
+                <a class="access-btn" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">ACESSAR</a>
             </div>
         `
     },
     baixar_jogos: {
-        title: 'TRADUÇÕES',
+        title: 'JOGOS PT-BR',
         content: `
             <div class="update-info">Todas ISO em Português!</div>
             <div class="download-card">
@@ -448,8 +467,8 @@ const modalContents = {
                 <div class="download-desc">Textura para o TAG FORCE 1.</div>
                 <div class="download-desc">Ainda vou postar no site esse conteúdo.</div>
                 <div class="download-btns">
-                    <a class="download-btn" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">BAIXAR</a>
-                    <button class="copy-btn" onclick="copyToClipboard('https://www.youtube.com/@YuujiPlay')">COPIAR</button>
+                    <a class="download-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">BAIXAR</a>
+                    <button class="copy-btn" onclick="copyToClipboard('Desculpe, não há link para copiar')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
@@ -464,8 +483,8 @@ const modalContents = {
                 <div class="download-desc">Textura para o TAG FORCE 2.</div>
                 <div class="download-desc">Ainda vou postar no site esse conteúdo.</div>
                 <div class="download-btns">
-                    <a class="download-btn" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">BAIXAR</a>
-                    <button class="copy-btn" onclick="copyToClipboard('https://www.youtube.com/@YuujiPlay')">COPIAR</button>
+                    <a class="download-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">BAIXAR</a>
+                    <button class="copy-btn" onclick="copyToClipboard('Desculpe, não há link para copiar')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
@@ -486,8 +505,8 @@ const modalContents = {
                 <div class="download-desc">Textura para o TAG FORCE 1.</div>
                 <div class="download-desc">Ainda vou postar no site esse conteúdo.</div>
                 <div class="download-btns">
-                    <a class="download-btn" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">BAIXAR</a>
-                    <button class="copy-btn" onclick="copyToClipboard('https://www.youtube.com/@YuujiPlay')">COPIAR</button>
+                    <a class="download-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">BAIXAR</a>
+                    <button class="copy-btn" onclick="copyToClipboard('Desculpe, não há link para copiar')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
@@ -508,8 +527,8 @@ const modalContents = {
                 <div class="download-desc">Textura para o TAG FORCE 1.</div>
                 <div class="download-desc">Ainda vou postar no site esse conteúdo.</div>
                 <div class="download-btns">
-                    <a class="download-btn" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">BAIXAR</a>
-                    <button class="copy-btn" onclick="copyToClipboard('https://www.youtube.com/@YuujiPlay')">COPIAR</button>
+                    <a class="download-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">BAIXAR</a>
+                    <button class="copy-btn" onclick="copyToClipboard('Desculpe, não há link para copiar')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
@@ -524,8 +543,8 @@ const modalContents = {
                 <div class="download-desc">Textura para o TAG FORCE 1.</div>
                 <div class="download-desc">Ainda vou postar no site esse conteúdo.</div>
                 <div class="download-btns">
-                    <a class="download-btn" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">BAIXAR</a>
-                    <button class="copy-btn" onclick="copyToClipboard('https://www.youtube.com/@YuujiPlay')">COPIAR</button>
+                    <a class="download-btn" href="https://yuujiplay.github.io/YuujiPlay/" target="_blank" rel="noopener noreferrer">BAIXAR</a>
+                    <button class="copy-btn" onclick="copyToClipboard('Desculpe, não há link para copiar')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
