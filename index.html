@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="classic">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,8 @@
         .member-info-title,
         .credit-title,
         .option-item,
-        .credit-pill {
+        .credit-pill,
+        .cover-overlay__title {
             font-family: 'Roboto Mono', monospace !important;
             letter-spacing: 0.5px;
             font-weight: 700;
@@ -34,7 +35,7 @@
 <header class="topbar">
     <div class="left-brand">
         <div class="status-dot"></div>
-        <span class="brand" id="theme-toggle">YuujiPlay</span>
+        <a class="brand" href="https://yuujiplay.com.br" target="_blank" rel="noopener noreferrer">YuujiPlay</a>
     </div>
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
         <i class="fas fa-bars"></i>
@@ -111,90 +112,42 @@
         <button class="menu-btn" data-modal="paginas">PÁGINAS</button>
     </section>
     <section class="panel center-panel">
-        <h2 class="section-title">RECOMENDAÇÕES</h2>
+        <h2 class="section-title">EVENTOS DA COMUNIDADE</h2>
         <div class="carousel" id="carousel">
-            <div class="game-card" data-index="8">
-                <a href="https://store.steampowered.com/app/1984270/Digimon_Story_Time_Stranger/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://sm.ign.com/t/ign_pt/screenshot/default/digimo-story-time-stranger-imagem-promo-destaque_duue.640.jpg" alt="Digimon Story Time Stranger" loading="lazy">
-                    <div class="platform-badge">STEAM</div>
-                    <h3>Digimon Story Time Stranger</h3>
-                    <p>Esse jogo transporta você para um universo vibrante, onde criaturas digitais ganham vida em histórias cheias de emoção, amizade e descobertas. Cada encontro com um Digimon traz uma sensação única de surpresa e encantamento, enquanto a narrativa conduz o jogador por caminhos inesperados, repletos de mistério e magia.</p>
-                </a>
-            </div>
             <div class="game-card active" data-index="0">
-                <a href="https://store.steampowered.com/app/2592160/Dispatch/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://midias.correiobraziliense.com.br/_midias/png/2025/09/19/800x600/1_2-59197956.png" alt="Dispatch" loading="lazy">
-                    <div class="platform-badge">STEAM</div>
-                    <h3>Dispatch</h3>
-                    <p>Dispatch é uma comédia sobre o ambiente de trabalho de super-heróis onde as suas escolhas importam. Gerencie uma equipe de heróis e planeje quem enviar para as emergências, tudo enquanto equilibra a política do escritório, relacionamentos pessoais e sua própria jornada para se tornar um herói.</p>
+                <a href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">
+                    <img src="https://static0.anpoimages.com/wordpress/wp-content/uploads/2022/09/youtube-ap-hero-2.jpg" alt="Canal YuujiPlay" loading="lazy">
+                    <div class="platform-badge">YouTube</div>
+                    <h3>Canal YuujiPlay</h3>
+                    <p>Tutoriais, gameplays e novidades do Projeto Infinity. Inscreva-se no canal oficial para não perder nenhuma atualização da comunidade!</p>
                 </a>
             </div>
             <div class="game-card" data-index="1">
-                <a href="https://store.steampowered.com/app/1623730/Palworld/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/capsule_616x353.jpg" alt="Palworld" loading="lazy">
-                    <div class="platform-badge">STEAM</div>
-                    <h3>Palworld</h3>
-                    <p>Este é um jogo completamente inovador de fabricação e sobrevivência em mundo aberto com suporte para vários jogadores. Nele você reúne criaturas fantásticas conhecidas como "Pals" em um vasto mundo e as usa em batalhas ou para trabalhos em construção, fazendas ou fábricas.</p>
+                <a href="https://discord.com/invite/UmbgRSmaSQ" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn2.steamgriddb.com/hero_thumb/4456aec9905b5a9b14744d67d8e0e3ce.png" alt="Projeto Infinity" loading="lazy">
+                    <div class="platform-badge">Discord</div>
+                    <h3>Projeto Infinity</h3>
+                    <p>Entre no servidor oficial da comunidade! Duelos online, suporte, reportes de bugs e eventos exclusivos com mais de 5 mil membros.</p>
                 </a>
             </div>
             <div class="game-card" data-index="2">
-                <a href="https://store.steampowered.com/app/3489700/Stellar_Blade/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://image.api.playstation.com/vulcan/ap/rnd/202401/2211/ff293dfc8d1a7030f658ff00e9f5d4d292e2253eff408a72.jpg" alt="Stellar Blade" loading="lazy">
-                    <div class="platform-badge">STEAM</div>
-                    <h3>Stellar Blade</h3>
-                    <p>Salve a humanidade da extinção no jogo de ação e aventura pós-apocalíptico Stellar Blade™. Vivencie combates intensos e um enredo cheio de reviravoltas conforme você desvenda os mistérios do colapso da Terra.</p>
+                <a href="https://youtu.be/jUbhlur7WX8" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.youtube.com/vi/jUbhlur7WX8/maxresdefault.jpg" alt="Tutorial Tag Force 2026" loading="lazy">
+                    <div class="platform-badge">Vídeo</div>
+                    <h3>Tutorial Tag Force 2026</h3>
+                    <p>Passo a passo completo: como baixar ISO PT-BR, instalar texturas, fontes e cheats para jogar a série Tag Force na melhor versão.</p>
                 </a>
             </div>
             <div class="game-card" data-index="3">
-                <a href="https://store.steampowered.com/app/1449850/YuGiOh_Master_Duel/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1449850/capsule_616x353.jpg" alt="Yu-Gi-Oh! Master Duel" loading="lazy">
-                    <div class="platform-badge">STEAM</div>
-                    <h3>Yu-Gi-Oh! Master Duel</h3>
-                    <p>A edição definitiva do card game competitivo que está em processo de evolução há mais de 20 anos! Duele no mais alto nível contra Duelistas de todo o mundo.</p>
-                </a>
-            </div>
-            <div class="game-card" data-index="4">
-                <a href="https://store.steampowered.com/app/2527500/MiSide/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2527500/capsule_616x353.jpg" alt="MiSide" loading="lazy">
-                    <div class="platform-badge">STEAM</div>
-                    <h3>MiSide</h3>
-                    <p>Imagine que você tem um jogo no qual se importa com um personagem. Mas consegue imaginar um dia você entrando nesse jogo?</p>
-                </a>
-            </div>
-            <div class="game-card" data-index="5">
-                <a href="https://store.steampowered.com/app/775500/SCARLET_NEXUS/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.steamstatic.com/steam/apps/775500/capsule_616x353.jpg" alt="Scarlet Nexus" loading="lazy">
-                    <div class="platform-badge">STEAM</div>
-                    <h3>Scarlet Nexus</h3>
-                    <p>Escolha entre Yuito e Kasane, psiônicos de elite com um talento para Psicocinese e suas próprias motivações para lutar. Conclua ambas as histórias para revelar todos os mistérios de um futuro Brain Punk envolto em tecnologia e habilidades psíquicas.</p>
-                </a>
-            </div>
-            <div class="game-card" data-index="6">
-                <a href="https://store.steampowered.com/app/239140/Dying_Light/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/239140/capsule_616x353.jpg" alt="Dying Light" loading="lazy">
-                    <div class="platform-badge">STEAM</div>
-                    <h3>Dying Light</h3>
-                    <p>Um jogo de ação e sobrevivência em primeira pessoa em um mundo aberto pós-apocalíptico tomado por zumbis comedores de carne humana. Atravesse uma cidade devastada por um vírus misterioso. Procure por suprimentos, crie armas e enfrente os infectados.</p>
-                </a>
-            </div>
-            <div class="game-card" data-index="7">
-                <a href="https://store.steampowered.com/app/243470/Watch_Dogs/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/243470/capsule_616x353.jpg" alt="Watch Dogs" loading="lazy">
-                    <div class="platform-badge">STEAM</div>
-                    <h3>Watch Dogs</h3>
-                    <p>No mundo hiperconectado de hoje, Chicago opera sob o ctOS, a rede de computadores mais avançada dos Estados Unidos.</p>
-                </a>
-            </div>
-            <div class="game-card" data-index="9">
-                <a href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">
-                    <img src="https://static0.anpoimages.com/wordpress/wp-content/uploads/2022/09/youtube-ap-hero-2.jpg" alt="Meu Canal" loading="lazy">
-                    <div class="platform-badge">YouTube</div>
-                    <h3>Meu Canal Oficial</h3>
-                    <p>Em Breve devo adicionar mais recomendações para todos. Se ainda não for inscrito, inscreva-se em meu canal, ficaria muito feliz com seu apoio.</p>
+                <a href="https://discord.com/invite/ZZJsWxCCpD" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.imgur.com/G0KhYbm.png" alt="Live de Domingo" loading="lazy">
+                    <div class="platform-badge">LIVE</div>
+                    <h3>Live de Domingo — 15h00</h3>
+                    <p>Toda semana tem live no canal! Fique de olho no Discord YuujiDiscPlay para avisos, interação com a comunidade e novidades em tempo real.</p>
                 </a>
             </div>
         </div>
-        <button class="menu-btn full-list-btn" data-modal="full_recomendacoes">VER LISTA COMPLETA</button>
+        <button class="menu-btn full-list-btn" data-modal="full_eventos">VER LISTA COMPLETA</button>
         <div class="download-grid">
             <button data-modal="baixar_jogos">JOGOS PT-BR</button>
             <button data-modal="baixar_texturas">TEXTURAS</button>

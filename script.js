@@ -165,49 +165,29 @@ apoia: {
             </div>
         `
     },
-    full_recomendacoes: {
-        title: 'RECOMENDAÇÕES',
+    full_eventos: {
+        title: 'EVENTOS DA COMUNIDADE',
         content: `
-            <div class="update-info">Informações atualizadas em 12/06/2026 às 20:00.</div>
+            <div class="update-info">Informações atualizadas em 14/06/2026 às 12:00.</div>
             <div class="profile-card">
-                <span class="profile-name">Digimon Story Time Stranger</span>
-                <a class="access-btn" href="https://store.steampowered.com/app/1984270/Digimon_Story_Time_Stranger/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">Scarlet Nexus</span>
-                <a class="access-btn" href="https://store.steampowered.com/app/775500/SCARLET_NEXUS/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">Dispatch</span>
-                <a class="access-btn" href="https://store.steampowered.com/app/2592160/Dispatch/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">Palworld</span>
-                <a class="access-btn" href="https://store.steampowered.com/app/1623730/Palworld/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">Stellar Blade</span>
-                <a class="access-btn" href="https://store.steampowered.com/app/3489700/Stellar_Blade/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">Yu-Gi-Oh! Master Duel</span>
-                <a class="access-btn" href="https://store.steampowered.com/app/1449850/YuGiOh_Master_Duel/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">MiSide</span>
-                <a class="access-btn" href="https://store.steampowered.com/app/2527500/MiSide/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">Dying Light</span>
-                <a class="access-btn" href="https://store.steampowered.com/app/239140/Dying_Light/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">Watch Dogs</span>
-                <a class="access-btn" href="https://store.steampowered.com/app/243470/Watch_Dogs/" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">Meu Canal</span>
+                <span class="profile-name">Canal YuujiPlay</span>
                 <a class="access-btn" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">ACESSAR</a>
+            </div>
+            <div class="profile-card">
+                <span class="profile-name">Projeto Infinity (Discord)</span>
+                <a class="access-btn" href="https://discord.com/invite/UmbgRSmaSQ" target="_blank" rel="noopener noreferrer">ACESSAR</a>
+            </div>
+            <div class="profile-card">
+                <span class="profile-name">Tutorial Tag Force 2026</span>
+                <a class="access-btn" href="https://youtu.be/jUbhlur7WX8" target="_blank" rel="noopener noreferrer">ASSISTIR</a>
+            </div>
+            <div class="profile-card">
+                <span class="profile-name">Live de Domingo — 15h00</span>
+                <a class="access-btn" href="https://discord.com/invite/ZZJsWxCCpD" target="_blank" rel="noopener noreferrer">ACESSAR</a>
+            </div>
+            <div class="profile-card">
+                <span class="profile-name">Atualização TAG FORCE SPECIAL</span>
+                <a class="access-btn" href="https://yuujiplay.com.br" target="_blank" rel="noopener noreferrer">VER MAIS</a>
             </div>
         `
     },
@@ -215,116 +195,152 @@ apoia: {
         title: 'JOGOS PT-BR',
         content: `
             <div class="update-info">Todas ISO em Português!</div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 1</span></div>
-                <div class="download-tag-container">
-                    <div class="download-tag">ISO</div>
-                    <div class="download-tag">4.0.1</div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coa3hr.jpg" alt="Yu-Gi-Oh! GX Tag Force 1">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 1</h3>
+                            <span class="cover-overlay__badge">ISO</span>
+                        </div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Versão</span><span class="cover-overlay__value">4.0.1</span></div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Tradução</span><span class="cover-overlay__tag">PT-BR</span></div>
+                        <p class="cover-overlay__desc">ISO completa traduzida para Português (Brasil) pelo Projeto Infinity.</p>
+                    </div>
                 </div>
-                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/file/hqca921n898bezq/Yu-Gi-Oh%21_GX_Tag_Force_1_PT-BR_%28v4.0.1%29.iso/file" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/file/hqca921n898bezq/Yu-Gi-Oh%21_GX_Tag_Force_1_PT-BR_%28v4.0.1%29.iso/file')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 2</span></div>
-                <div class="download-tag-container">
-                    <div class="download-tag">ISO</div>
-                    <div class="download-tag">3.0.1</div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2rxh.jpg" alt="Yu-Gi-Oh! GX Tag Force 2">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 2</h3>
+                            <span class="cover-overlay__badge">ISO</span>
+                        </div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Versão</span><span class="cover-overlay__value">3.0.1</span></div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Tradução</span><span class="cover-overlay__tag">PT-BR</span></div>
+                        <p class="cover-overlay__desc">ISO completa traduzida para Português (Brasil) pelo Projeto Infinity.</p>
+                    </div>
                 </div>
-                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1BynOHG3UAVZKzYfcWBMWikkTeFF65xi8/view?pli=1" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1BynOHG3UAVZKzYfcWBMWikkTeFF65xi8/view?pli=1')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 3</span></div>
-                <div class="download-tag-container">
-                    <div class="download-tag">ISO</div>
-                    <div class="download-tag">3.0.1</div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5xdy.jpg" alt="Yu-Gi-Oh! GX Tag Force 3">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 3</h3>
+                            <span class="cover-overlay__badge">ISO</span>
+                        </div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Versão</span><span class="cover-overlay__value">3.0.1</span></div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Tradução</span><span class="cover-overlay__tag">PT-BR</span></div>
+                        <p class="cover-overlay__desc">ISO completa traduzida para Português (Brasil) pelo Projeto Infinity.</p>
+                    </div>
                 </div>
-                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1BSC9975cekQoS9FP-IDDxwV22CHM9pOL/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1BSC9975cekQoS9FP-IDDxwV22CHM9pOL/view')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 4</span></div>
-                <div class="download-tag-container">
-                    <div class="download-tag">ISO</div>
-                    <div class="download-tag">3.0.1</div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2rxe.jpg" alt="Yu-Gi-Oh! 5D's Tag Force 4">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 4</h3>
+                            <span class="cover-overlay__badge">ISO</span>
+                        </div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Versão</span><span class="cover-overlay__value">3.0.1</span></div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Tradução</span><span class="cover-overlay__tag">PT-BR</span></div>
+                        <p class="cover-overlay__desc">ISO completa traduzida para Português (Brasil) pelo Projeto Infinity.</p>
+                    </div>
                 </div>
-                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/19VhBVKgwaQGEy_eR7fxMucM2_rUWCE_s/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/19VhBVKgwaQGEy_eR7fxMucM2_rUWCE_s/view')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 5</span></div>
-                <div class="download-tag-container">
-                    <div class="download-tag">ISO</div>
-                    <div class="download-tag">3.0.1</div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2rxf.jpg" alt="Yu-Gi-Oh! 5D's Tag Force 5">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 5</h3>
+                            <span class="cover-overlay__badge">ISO</span>
+                        </div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Versão</span><span class="cover-overlay__value">3.0.1</span></div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Tradução</span><span class="cover-overlay__tag">PT-BR</span></div>
+                        <p class="cover-overlay__desc">ISO completa traduzida para Português (Brasil) pelo Projeto Infinity.</p>
+                    </div>
                 </div>
-                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1s6d-mP9evM8fQr5MqxB1NaVINELggBpF/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1s6d-mP9evM8fQr5MqxB1NaVINELggBpF/view')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 6</span></div>
-                <div class="download-tag-container">
-                    <div class="download-tag">ISO</div>
-                    <div class="download-tag">4.0.0</div>
-                    <div class="download-tag">SOLO</div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2rxg.jpg" alt="Yu-Gi-Oh! 5D's Tag Force 6">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 6</h3>
+                            <span class="cover-overlay__badge">ISO</span>
+                        </div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Versão</span><span class="cover-overlay__value">4.0.0 · SOLO</span></div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Tradução</span><span class="cover-overlay__tag">PT-BR</span></div>
+                        <p class="cover-overlay__desc">Versão completa sem cortes, ideal para jogar OFFLINE com todas as descrições.</p>
+                    </div>
                 </div>
-                <div class="download-desc">Versão completa sem cortes, para quem joga somente OFFLINE (Com descrição de monstros normais+).</div>
-                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1EvvYciz6Rh_Tqj7_aBWHoBtpw_B8e3Nh/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1EvvYciz6Rh_Tqj7_aBWHoBtpw_B8e3Nh/view')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 6</span></div>
-                <div class="download-tag-container">
-                    <div class="download-tag">ISO</div>
-                    <div class="download-tag">4.0.0</div>
-                    <div class="download-tag">MULTI</div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2rxg.jpg" alt="Yu-Gi-Oh! 5D's Tag Force 6">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 6</h3>
+                            <span class="cover-overlay__badge">ISO</span>
+                        </div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Versão</span><span class="cover-overlay__value">4.0.0 · MULTI</span></div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Tradução</span><span class="cover-overlay__tag">PT-BR</span></div>
+                        <p class="cover-overlay__desc">Versão otimizada para duelos ONLINE no Projeto Infinity.</p>
+                    </div>
                 </div>
-                <div class="download-desc">Essa versão foi otimizada (Descrição de monstros normais removidas) para quem gosta de jogar ONLINE.</div>
-                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1ri-YwZHIfKBzQ9lEnnSivhP8wY9OGrv7/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1ri-YwZHIfKBzQ9lEnnSivhP8wY9OGrv7/view')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE SPECIAL</span></div>
-                <div class="download-tag-container">
-                    <div class="download-tag">ISO</div>
-                    <div class="download-tag">4.0.1</div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4kot.jpg" alt="Yu-Gi-Oh! Arc-V Tag Force Special">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE SPECIAL</h3>
+                            <span class="cover-overlay__badge">ISO</span>
+                        </div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Versão</span><span class="cover-overlay__value">4.0.1</span></div>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Tradução</span><span class="cover-overlay__tag">PT-BR</span></div>
+                        <p class="cover-overlay__desc">ISO completa traduzida para Português (Brasil) pelo Projeto Infinity.</p>
+                    </div>
                 </div>
-                <div class="download-desc">TRADUÇÃO <span class="download-tag">PT-BR</span></div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://drive.google.com/file/d/1MGEv1ThBxcL0EcYPZc_DEn4XIYL-Sn7z/view" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1MGEv1ThBxcL0EcYPZc_DEn4XIYL-Sn7z/view')">COPIAR</button>
@@ -337,84 +353,126 @@ apoia: {
         title: 'TEXTURAS',
         content: `
             <div class="update-info">Temos texturas para todos os TAG FORCE's, não estão perfeitas, mas é feito com carinho.</div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 1</span></div>
-                <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente.</div>
-                <div class="download-desc">LANÇADO <span class="download-tag">30/07/2025</span></div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coa3hr.jpg" alt="Texturas TAG FORCE 1">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 1</h3>
+                            <span class="cover-overlay__badge">TEXTURA</span>
+                        </div>
+                        <p class="cover-overlay__desc">Ainda em desenvolvimento, foi pausado temporariamente.</p>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Lançado</span><span class="cover-overlay__value">30/07/2025</span></div>
+                    </div>
+                </div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/file/eu0kehtal2scvge/ULUS10136.zip/file" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/file/eu0kehtal2scvge/ULUS10136.zip/file')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 2</span></div>
-                <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente.</div>
-                <div class="download-desc">LANÇADO <span class="download-tag">12/01/2025</span></div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2rxh.jpg" alt="Texturas TAG FORCE 2">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 2</h3>
+                            <span class="cover-overlay__badge">TEXTURA</span>
+                        </div>
+                        <p class="cover-overlay__desc">Ainda em desenvolvimento, foi pausado temporariamente.</p>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Lançado</span><span class="cover-overlay__value">12/01/2025</span></div>
+                    </div>
+                </div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/u7w58oymmc9q2/Tag+Force+2" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/u7w58oymmc9q2/Tag+Force+2')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 3</span></div>
-                <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente</div>
-                <div class="download-desc">LANÇADO <span class="download-tag">12/01/2025</span></div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5xdy.jpg" alt="Texturas TAG FORCE 3">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 3</h3>
+                            <span class="cover-overlay__badge">TEXTURA</span>
+                        </div>
+                        <p class="cover-overlay__desc">Ainda em desenvolvimento, foi pausado temporariamente.</p>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Lançado</span><span class="cover-overlay__value">12/01/2025</span></div>
+                    </div>
+                </div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/rnsuyg2rw1i70/Tag+Force+3" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/rnsuyg2rw1i70/Tag+Force+3')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 4</span></div>
-                <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente.</div>
-                <div class="download-desc">LANÇADO <span class="download-tag">12/01/2025</span></div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2rxe.jpg" alt="Texturas TAG FORCE 4">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 4</h3>
+                            <span class="cover-overlay__badge">TEXTURA</span>
+                        </div>
+                        <p class="cover-overlay__desc">Ainda em desenvolvimento, foi pausado temporariamente.</p>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Lançado</span><span class="cover-overlay__value">12/01/2025</span></div>
+                    </div>
+                </div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/8e1xro126r2kb/Tag+Force+4" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/8e1xro126r2kb/Tag+Force+4')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 5</span></div>
-                <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente.</div>
-                <div class="download-desc">LANÇADO <span class="download-tag">12/01/2025</span></div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2rxf.jpg" alt="Texturas TAG FORCE 5">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 5</h3>
+                            <span class="cover-overlay__badge">TEXTURA</span>
+                        </div>
+                        <p class="cover-overlay__desc">Ainda em desenvolvimento, foi pausado temporariamente.</p>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Lançado</span><span class="cover-overlay__value">12/01/2025</span></div>
+                    </div>
+                </div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/959blew9auzly/Tag+Force+5" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/959blew9auzly/Tag+Force+5')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE 6</span></div>
-                <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Ainda em desenvolvimento, foi pausado temporariamente.</div>
-                <div class="download-desc">LANÇADO <span class="download-tag">12/01/2025</span></div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2rxg.jpg" alt="Texturas TAG FORCE 6">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE 6</h3>
+                            <span class="cover-overlay__badge">TEXTURA</span>
+                        </div>
+                        <p class="cover-overlay__desc">Ainda em desenvolvimento, foi pausado temporariamente.</p>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Lançado</span><span class="cover-overlay__value">12/01/2025</span></div>
+                    </div>
+                </div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/n6ia1pyjoezs5/Tag+Force+6" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/n6ia1pyjoezs5/Tag+Force+6')">COPIAR</button>
                 </div>
                 <div class="download-obs">Clique para "baixar" para ser redirecionado para o site de Download ou clique em "copiar" para Copiar e colar o link para download em seu navegador manualmente se necessário.</div>
             </div>
-            <div class="download-card">
-                <img class="download-img" src="https://sm.ign.com/ign_br/screenshot/default/imagem-2023-10-24-101457381_2ct1.jpg">
-                <div class="download-title"><span>TAG FORCE SPECIAL</span></div>
-                <div class="download-tag-container"><div class="download-tag">TEXTURA</div></div>
-                <div class="download-desc">Em desenvolvimento: Estou refazendo todas as texturas novamente, porque muitas feitas foram usando Upscale na época que eu tinha somente um celular pra editar.</div>
-                <div class="download-desc">LANÇADO <span class="download-tag">04/02/2025</span></div>
+            <div class="download-card download-card--cover">
+                <div class="cover-wrap">
+                    <img class="download-img" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4kot.jpg" alt="Texturas TAG FORCE SPECIAL">
+                    <div class="cover-overlay">
+                        <div class="cover-overlay__head">
+                            <h3 class="cover-overlay__title">TAG FORCE SPECIAL</h3>
+                            <span class="cover-overlay__badge">TEXTURA</span>
+                        </div>
+                        <p class="cover-overlay__desc">Em desenvolvimento: refazendo todas as texturas novamente.</p>
+                        <div class="cover-overlay__row"><span class="cover-overlay__label">Lançado</span><span class="cover-overlay__value">04/02/2025</span></div>
+                    </div>
+                </div>
                 <div class="download-btns">
                     <a class="download-btn" href="https://www.mediafire.com/folder/d8h7602entcwy/Tag+Force+S" target="_blank" rel="noopener noreferrer">BAIXAR</a>
                     <button class="copy-btn" onclick="copyToClipboard('https://www.mediafire.com/folder/d8h7602entcwy/Tag+Force+S')">COPIAR</button>
@@ -1096,23 +1154,9 @@ document.addEventListener('keydown', e => {
 
 document.querySelector('.close-menu-btn')?.addEventListener('click', toggleMenu);
 
-// ==================== TEMA ====================
-const themeToggle = document.getElementById('theme-toggle');
-const html = document.documentElement;
-
-function setTheme(theme) {
-    html.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-}
-
-const savedTheme = localStorage.getItem('theme') || 'dark';
-setTheme(savedTheme);
-
-themeToggle.addEventListener('click', () => {
-    const current = html.getAttribute('data-theme') || 'dark';
-    const newTheme = current === 'dark' ? 'classic' : 'dark';
-    setTheme(newTheme);
-});
+// ==================== TEMA (fixo: classic) ====================
+document.documentElement.setAttribute('data-theme', 'classic');
+localStorage.setItem('theme', 'classic');
 
 // ==================== ESCONDER NUMERION AO CLICAR ====================
 document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
