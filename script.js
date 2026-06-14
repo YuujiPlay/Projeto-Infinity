@@ -173,22 +173,6 @@ apoia: {
                 <span class="profile-name">Canal YuujiPlay</span>
                 <a class="access-btn" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">ACESSAR</a>
             </div>
-            <div class="profile-card">
-                <span class="profile-name">Projeto Infinity (Discord)</span>
-                <a class="access-btn" href="https://discord.com/invite/UmbgRSmaSQ" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">Tutorial Tag Force 2026</span>
-                <a class="access-btn" href="https://youtu.be/jUbhlur7WX8" target="_blank" rel="noopener noreferrer">ASSISTIR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">Live de Domingo — 15h00</span>
-                <a class="access-btn" href="https://discord.com/invite/ZZJsWxCCpD" target="_blank" rel="noopener noreferrer">ACESSAR</a>
-            </div>
-            <div class="profile-card">
-                <span class="profile-name">Atualização TAG FORCE SPECIAL</span>
-                <a class="access-btn" href="https://yuujiplay.com.br" target="_blank" rel="noopener noreferrer">VER MAIS</a>
-            </div>
         `
     },
     baixar_jogos: {
@@ -1052,6 +1036,82 @@ problemas: {
     }
 };
 
+// ==================== PESQUISA NOS MODAIS ====================
+const SEARCHABLE_MODALS = new Set([
+    'tutoriais', 'membros', 'paginas', 'full_eventos',
+    'baixar_jogos', 'baixar_texturas', 'baixar_adicionais', 'baixar_templates', 'baixar_temas', 'baixar_skins',
+    'menu_duelista', 'notificacoes', 'comunicados', 'problemas', 'recusados', 'novidades', 'servidores'
+]);
+
+const MODAL_SEARCH_CARD_SELECTOR = '.tutorial-card, .profile-card, .page-card, .download-card, .option-item, .notif-card, .problem-main-card, .member-info-card';
+
+function normalizeSearchText(text) {
+    return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+}
+
+function getTopLevelSearchables(container) {
+    const all = Array.from(container.querySelectorAll(MODAL_SEARCH_CARD_SELECTOR));
+    return all.filter(el => !all.some(other => other !== el && other.contains(el)));
+}
+
+function filterModalSearch(contentEl, query) {
+    const items = getTopLevelSearchables(contentEl);
+    let visible = 0;
+
+    items.forEach(item => {
+        const match = !query || normalizeSearchText(item.textContent).includes(query);
+        item.classList.toggle('search-hidden', !match);
+        if (match) visible++;
+    });
+
+    let emptyMsg = contentEl.querySelector('.search-empty-msg');
+    if (query && visible === 0) {
+        if (!emptyMsg) {
+            emptyMsg = document.createElement('p');
+            emptyMsg.className = 'search-empty-msg';
+            emptyMsg.textContent = 'Nenhum resultado encontrado para esta busca.';
+            contentEl.appendChild(emptyMsg);
+        }
+        emptyMsg.classList.remove('hidden');
+    } else if (emptyMsg) {
+        emptyMsg.classList.add('hidden');
+    }
+}
+
+function buildModalSearchBar() {
+    return `
+        <div class="modal-search" role="search">
+            <i class="fas fa-search modal-search__icon" aria-hidden="true"></i>
+            <input type="search" class="modal-search__input" placeholder="Pesquisar dentro deste modal..." autocomplete="off" aria-label="Pesquisar dentro deste modal">
+            <button type="button" class="modal-search__clear hidden" aria-label="Limpar busca">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    `;
+}
+
+function initModalSearch(modalScroll) {
+    const input = modalScroll.querySelector('.modal-search__input');
+    const clearBtn = modalScroll.querySelector('.modal-search__clear');
+    const content = modalScroll.querySelector('.modal-searchable-content');
+    if (!input || !clearBtn || !content) return;
+
+    const apply = () => {
+        const query = normalizeSearchText(input.value);
+        clearBtn.classList.toggle('hidden', !query);
+        filterModalSearch(content, query);
+    };
+
+    input.addEventListener('input', apply);
+    clearBtn.addEventListener('click', () => {
+        input.value = '';
+        input.focus();
+        apply();
+    });
+
+    setTimeout(() => input.focus(), 100);
+}
+
 // ==================== EVENTOS DOS BOTÕES ====================
 document.querySelectorAll('[data-modal]').forEach(button => {
     button.addEventListener('click', () => {
@@ -1061,15 +1121,23 @@ document.querySelectorAll('[data-modal]').forEach(button => {
 
 function openModal(type) {
     const data = modalContents[type] || { title: 'Conteúdo em construção', content: '<p>Em breve mais conteúdo aqui.</p>' };
+    const hasSearch = SEARCHABLE_MODALS.has(type);
+    const scrollContent = hasSearch
+        ? `${buildModalSearchBar()}<div class="modal-searchable-content">${data.content}</div>`
+        : data.content;
+
     modalBody.innerHTML = `
         <div class="modal-header-fixed">
             <h2 class="section-title">${data.title}</h2>
         </div>
         <div class="modal-content-scroll">
-            ${data.content}
+            ${scrollContent}
         </div>
     `;
     modalElement.classList.remove('hidden');
+    if (hasSearch) {
+        initModalSearch(modalBody.querySelector('.modal-content-scroll'));
+    }
 }
 
 function closeModal() {
@@ -1112,16 +1180,21 @@ function showCard(index) {
 }
 
 function nextSlide() {
+    if (totalCards <= 1) return;
     currentIndex = (currentIndex + 1) % totalCards;
     showCard(currentIndex);
 }
 
 showCard(0);
-let autoInterval = setInterval(nextSlide, 5000);
+let autoInterval = totalCards > 1 ? setInterval(nextSlide, 5000) : null;
 
-carousel.addEventListener('mouseenter', () => clearInterval(autoInterval));
+carousel.addEventListener('mouseenter', () => {
+    if (autoInterval) clearInterval(autoInterval);
+});
 carousel.addEventListener('mouseleave', () => {
-    autoInterval = setInterval(nextSlide, 5000);
+    if (totalCards > 1) {
+        autoInterval = setInterval(nextSlide, 5000);
+    }
 });
 
 // ==================== MENU MOBILE ====================
@@ -1153,10 +1226,6 @@ document.addEventListener('keydown', e => {
 });
 
 document.querySelector('.close-menu-btn')?.addEventListener('click', toggleMenu);
-
-// ==================== TEMA (fixo: classic) ====================
-document.documentElement.setAttribute('data-theme', 'classic');
-localStorage.setItem('theme', 'classic');
 
 // ==================== ESCONDER NUMERION AO CLICAR ====================
 document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
