@@ -1283,12 +1283,6 @@ if (menuToggle && topbarMenu) {
         e.stopPropagation();
     });
 
-    document.querySelector('.close-menu-btn')?.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        closeMenu();
-    });
-
     topbarMenu.querySelectorAll('[data-modal]').forEach(button => {
         button.addEventListener('click', () => {
             closeMenu();
@@ -1365,12 +1359,18 @@ function showImportantNotice() {
     });
 }
 
-// ==================== BRAND YUUJIPLAY ====================
-document.getElementById('brandLink')?.addEventListener('click', (e) => {
+// ==================== BRAND / MENU YUUJIPLAY ====================
+function handleYuujiplayRedirect(e) {
     e.preventDefault();
     if (confirm('O site será atualizado de INFINITY para YUUJIPLAY, deseja prosseguir?')) {
         window.location.href = 'https://yuujiplay.com.br/';
     }
+}
+
+document.getElementById('brandLink')?.addEventListener('click', handleYuujiplayRedirect);
+document.getElementById('yuujiplayMenuBtn')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    handleYuujiplayRedirect(e);
 });
 
 // ==================== PARTÍCULAS DIGITAIS ====================
