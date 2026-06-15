@@ -1353,21 +1353,43 @@ body > footer {
         background: var(--panel);
         flex-direction: column;
         align-items: stretch;
-        gap: 0.5rem;
-        padding: 0.75rem 1rem 1rem;
+        justify-content: flex-start;
+        gap: 0;
+        padding: 0;
         border-top: 1px solid var(--border-glow);
         z-index: 10025;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-        overflow-y: auto;
-        overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
+        overflow: hidden;
         pointer-events: auto;
         width: 100%;
-        max-width: 100vw;
+        max-width: 100%;
         box-sizing: border-box;
     }
     .topbar-menu.active {
         display: flex !important;
+    }
+    .topbar-menu-inner {
+        flex: 1;
+        min-height: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        overscroll-behavior: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem 1.25rem;
+        box-sizing: border-box;
+    }
+    .topbar-menu-inner > * {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
     }
     .topbar-menu.active .menu-btn {
         margin-bottom: 0.4rem;
@@ -1377,6 +1399,19 @@ body > footer {
     .topbar-menu.active .menu-btn:last-child {
         margin-bottom: 0;
     }
+    .topbar-menu-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.25rem;
+        border-top: 1px solid var(--border-glow);
+        flex-shrink: 0;
+    }
     .center-links {
         flex-direction: column;
         width: 100%;
@@ -1385,16 +1420,17 @@ body > footer {
         transform: none;
         left: auto;
         top: auto;
+        overflow: hidden;
     }
-    .right-social {
+    .topbar-menu .right-social {
         flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 100%;
         gap: 1.5rem;
-        margin-top: 0.75rem;
-        padding-top: 0.75rem;
-        border-top: 1px solid var(--border-glow);
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
         flex-shrink: 0;
     }
     .right-social a {
@@ -1402,8 +1438,13 @@ body > footer {
     }
     .top-card {
         width: 100%;
+        max-width: 100%;
         justify-content: center;
         font-size: 0.95rem;
+        overflow: visible;
+    }
+    .topbar-menu .top-card .numerion {
+        right: 0.25rem;
     }
     .profile-card {
         flex-direction: row !important;
@@ -1543,6 +1584,9 @@ body > footer {
     .topbar-menu {
         justify-content: flex-end;
     }
+    .topbar-menu .right-social {
+        display: flex;
+    }
 }
 @media (min-width: 1024px) {
     .layout {
@@ -1569,21 +1613,33 @@ body > footer {
         display: none !important;
     }
 }
-/* Esconde a cópia mobile no desktop */
+/* Esconde elementos exclusivos do menu mobile no desktop */
 .mobile-only-panel,
 .yuujiplay-menu-btn {
     display: none;
+}
+@media (min-width: 769px) {
+    .topbar-menu-inner,
+    .topbar-menu-footer {
+        display: contents;
+    }
 }
 @media (max-width: 768px) {
     .mobile-only-panel {
         display: block;
     }
+    .topbar-menu-inner {
+        display: flex;
+    }
+    .topbar-menu-footer {
+        display: flex;
+    }
     .yuujiplay-menu-btn {
         display: block;
         align-self: center;
         width: auto;
-        min-width: min(100%, 16rem);
-        max-width: 100%;
+        min-width: 0;
+        max-width: calc(100% - 1rem);
         box-sizing: border-box;
     }
 }
@@ -1591,7 +1647,7 @@ body > footer {
 .yuujiplay-menu-btn {
     font-family: 'Roboto Mono', monospace;
     padding: 0.9rem 2.25rem;
-    margin: 0.85rem auto 0.5rem;
+    margin: 0;
     background: linear-gradient(135deg, #93c5fd 0%, #3b82f6 45%, #1e3a8a 100%);
     color: #fff;
     font-weight: 700;
