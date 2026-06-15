@@ -1363,7 +1363,7 @@ body > footer {
         top: var(--topbar-mobile-height);
         left: 0;
         right: 0;
-        bottom: 0;
+        bottom: auto;
         background: var(--panel);
         flex-direction: column;
         align-items: stretch;
@@ -1373,25 +1373,43 @@ body > footer {
         border-top: 1px solid var(--border-glow);
         z-index: 10025;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        overscroll-behavior: contain;
+        touch-action: pan-y;
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent) var(--panel-2);
         pointer-events: auto;
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
+        height: calc(100vh - var(--topbar-mobile-height));
+        height: calc(100dvh - var(--topbar-mobile-height));
+        max-height: calc(100vh - var(--topbar-mobile-height));
+        max-height: calc(100dvh - var(--topbar-mobile-height));
     }
     .topbar-menu.active {
         display: flex !important;
     }
+    .topbar-menu::-webkit-scrollbar {
+        width: 6px;
+    }
+    .topbar-menu::-webkit-scrollbar-track {
+        background: var(--panel-2);
+        border-radius: 10px;
+    }
+    .topbar-menu::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, var(--accent), var(--primary));
+        border-radius: 10px;
+        border: 2px solid var(--panel-2);
+    }
     .topbar-menu-inner {
-        flex: 1;
-        min-height: 0;
+        flex: 0 0 auto;
         width: 100%;
         max-width: 100%;
-        overflow-y: auto;
-        overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
-        scroll-behavior: smooth;
-        overscroll-behavior: contain;
+        overflow: visible;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -1680,8 +1698,7 @@ body > footer {
     }
     .mobile-only-panel,
     .mobile-menu-divider,
-    .mobile-menu-brand,
-    .top-card--live {
+    .mobile-menu-brand {
         display: none !important;
     }
 }
@@ -1735,44 +1752,6 @@ body > footer {
         max-width: 18rem;
         box-sizing: border-box;
     }
-    .top-card--live {
-        display: grid;
-    }
-}
-/* Botão Live — layout especial no menu mobile */
-.top-card--live {
-    border-color: rgba(239, 68, 68, 0.35);
-    background: linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, var(--panel-2) 55%, rgba(249, 115, 22, 0.08) 100%);
-}
-.top-card--live:hover {
-    border-color: rgba(239, 68, 68, 0.55);
-    background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(26, 26, 46, 0.95) 60%, rgba(249, 115, 22, 0.12) 100%);
-}
-.top-card--live .live-icon {
-    color: #ef4444;
-    animation: livePulse 1.8s ease-in-out infinite;
-}
-.top-card--live:hover .live-icon {
-    color: #ef4444;
-}
-.top-card--live .live-label {
-    font-weight: 700;
-    letter-spacing: 0.08em;
-}
-.top-card--live .live-time {
-    background: linear-gradient(135deg, #f97316, #ef4444);
-    border-radius: 999px;
-    width: auto;
-    min-width: 2.75rem;
-    height: 1.45rem;
-    padding: 0 0.5rem;
-    font-size: 0.68rem;
-    letter-spacing: 0.03em;
-    white-space: nowrap;
-}
-@keyframes livePulse {
-    0%, 100% { opacity: 0.65; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.08); }
 }
 /* Botão YUUJIPLAY no menu mobile */
 .yuujiplay-menu-btn {
