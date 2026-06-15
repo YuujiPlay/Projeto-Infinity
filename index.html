@@ -32,21 +32,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-zinc-950 text-gray-200">
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
 <header class="topbar">
     <div class="left-brand">
         <div class="status-dot"></div>
-        <a class="brand" href="https://yuujiplay.com.br" target="_blank" rel="noopener noreferrer">YuujiPlay</a>
+        <a class="brand" href="#" id="brandLink">YuujiPlay</a>
     </div>
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
         <i class="fas fa-bars"></i>
     </button>
     <div class="topbar-menu" id="topbarMenu">
-        <div class="right-social">
-            <a href="https://discord.com/invite/ZZJsWxCCpD" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
-            <a href="https://www.facebook.com/YuujiPlay" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/yuujiplay" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/YuujiPlay" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
-        </div>
         <div class="center-links">
             <a class="top-card" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-youtube"></i>
@@ -63,12 +58,6 @@
                 <span>Projeto Infinity</span>
                 <div class="numerion">5.3K</div>
             </a>
-            <div class="top-card">
-                <i class="fas fa-users"></i>
-                <span>Live: </span>
-                <div class="members-count-gradient">Domingo</div>
-                <div class="badge">15h00</div>
-            </div>
         </div>
         <section class="panel right-panel mobile-only-panel">
             <button class="menu-btn" data-modal="menu_duelista">OPÇÕES</button>
@@ -94,7 +83,13 @@
             </button>
             <button class="menu-btn" data-modal="servidores">SERVIDORES</button>
         </section>
-        <button class="close-menu-btn">Fechar Menu</button>
+        <div class="right-social">
+            <a href="https://discord.com/invite/ZZJsWxCCpD" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+            <a href="https://www.facebook.com/YuujiPlay" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/yuujiplay" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/YuujiPlay" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <button class="close-menu-btn" type="button">FECHAR MENU</button>
     </div>
 </header>
 <main class="layout">
@@ -107,7 +102,6 @@
         </button>
         <button class="menu-btn" data-modal="contrib">CONTRIBUÍDORES</button>
         <button class="menu-btn" data-modal="divulg">DIVULGAÇÕES</button>
-        <button class="menu-btn" data-modal="membros">MEMBROS</button>
         <button class="menu-btn" data-modal="apoia">APOIA-ME</button>
         <button class="menu-btn" data-modal="paginas">PÁGINAS</button>
     </section>
@@ -162,16 +156,15 @@
     <p>Criador por, <a href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">YuujiPlay</a></p>
     <p>© 2026 Todos os direitos reservados.</p>
     <p>O site não armazena nenhum arquivo em seu servidor.</p>
-    <p>Versão <span class="version">1.0.4</span></p>
+    <p>Versão <span class="version">1.0.5</span></p>
 </footer>
 <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
     <div class="modal-content">
-        <button class="close-btn" aria-label="Fechar modal">X</button>
+        <button class="close-btn" type="button" aria-label="Fechar modal">✕</button>
         <div id="modal-body"></div>
     </div>
 </div>
 <div id="notification" class="notification hidden" role="alert">Copiado para a área de transferência!</div>
-<div class="menu-overlay hidden" id="menuOverlay"></div>
 
 <!-- NOTIFICAÇÃO TEMPORÁRIA - COMUNICADO IMPORTANTE -->
 <div id="important-notice" class="important-notice">

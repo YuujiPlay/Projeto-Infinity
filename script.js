@@ -94,21 +94,6 @@ const modalContents = {
             </div>
         `
     },
-    membros: {
-        title: 'MEMBROS',
-        content: `
-            <div class="update-info">Informações atualizadas em 21/02/2026 às 23:00.</div>
-            <div class="profile-card">
-                <img class="profile-img" src="https://images.ygoprodeck.com/images/cards_cropped/86066372.jpg" alt="YuujiPlay">
-                <span class="profile-name">YuujiPlay</span>
-                <a class="access-btn" href="https://www.youtube.com/@YuujiPlay" target="_blank" rel="noopener noreferrer">VISITAR</a>
-            </div>
-            <div class="member-info-card">
-                <div class="member-info-title">IMPORTANTE</div>
-                <p class="member-info-text">Membros tem um espaço vago para se divulgarem ou divulgar algo no botão "VISITAR" acima, mais precisa ser aceito pela administração para ser autorizado, afinal não pode qualquer coisa, ou acabaria virando bardena.</p>
-            </div>
-        `
-    },
 apoia: {
     title: 'APOIA-ME',
     content: `
@@ -987,7 +972,7 @@ problemas: {
                     <h3 class="project-title">Projeto Infinity - Passo a Passo</h3>
                     <a href="https://youtu.be/jUbhlur7WX8" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
                 </div>
-                <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
+                <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 12px; padding: 15px 20px; margin-top: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
                     <div class="download-tag">ISO</div>
                     <div class="download-tag">TEXTURA</div>
                     <div class="download-tag">FONT</div>
@@ -1001,7 +986,7 @@ problemas: {
                     <h3 class="project-title">Projeto Infinity - Passo a Passo</h3>
                     <a href="https://youtu.be/Y2s06fFWHmg" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
                 </div>
-                <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
+                <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 12px; padding: 15px 20px; margin-top: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
                     <div class="download-tag">ISO</div>
                     <div class="download-tag">TEXTURA</div>
                     <div class="download-tag">FONT</div>
@@ -1015,7 +1000,7 @@ problemas: {
                     <h3 class="project-title">Colocando Cheat's no PSP</h3>
                     <a href="https://youtu.be/0yTz7_VJvjo" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
                 </div>
-                <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
+                <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 12px; padding: 15px 20px; margin-top: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
                     <div class="download-tag">CHEATS</div>
                     <div class="download-tag">2025</div>
                 </div>
@@ -1026,7 +1011,7 @@ problemas: {
                     <h3 class="project-title">Tag Force 1 Definitivo</h3>
                     <a href="https://youtu.be/5ep5gfNPSok" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
                 </div>
-                <div style="background: rgba(255,255,255,0.08); border: 2px solid #00ff9d; border-radius: 12px; padding: 15px 20px; margin-top: 25px; box-shadow: 0 0 15px rgba(0, 255, 157, 0.3); display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
+                <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 12px; padding: 15px 20px; margin-top: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
                     <div class="download-tag">ISO</div>
                     <div class="download-tag">TEXTURA</div>
                     <div class="download-tag">2025</div>
@@ -1038,7 +1023,7 @@ problemas: {
 
 // ==================== PESQUISA NOS MODAIS ====================
 const SEARCHABLE_MODALS = new Set([
-    'tutoriais', 'membros', 'paginas', 'full_eventos',
+    'tutoriais', 'paginas', 'full_eventos',
     'baixar_jogos', 'baixar_texturas', 'baixar_adicionais', 'baixar_templates', 'baixar_temas', 'baixar_skins',
     'menu_duelista', 'notificacoes', 'comunicados', 'problemas', 'recusados', 'novidades', 'servidores'
 ]);
@@ -1090,16 +1075,31 @@ function buildModalSearchBar() {
     `;
 }
 
-function initModalSearch(modalScroll) {
-    const input = modalScroll.querySelector('.modal-search__input');
-    const clearBtn = modalScroll.querySelector('.modal-search__clear');
-    const content = modalScroll.querySelector('.modal-searchable-content');
+function equalizeDownloadCardHeights(container) {
+    const cards = Array.from(container.querySelectorAll(':scope > .download-card:not(.search-hidden)'));
+    if (!cards.length) return;
+
+    cards.forEach(card => { card.style.minHeight = ''; });
+    if (window.innerWidth < 768) return;
+
+    for (let i = 0; i < cards.length; i += 2) {
+        const row = cards.slice(i, i + 2);
+        const maxH = Math.max(...row.map(c => c.offsetHeight));
+        row.forEach(card => { card.style.minHeight = `${maxH}px`; });
+    }
+}
+
+function initModalSearch() {
+    const input = modalBody.querySelector('.modal-search__input');
+    const clearBtn = modalBody.querySelector('.modal-search__clear');
+    const content = modalBody.querySelector('.modal-searchable-content');
     if (!input || !clearBtn || !content) return;
 
     const apply = () => {
         const query = normalizeSearchText(input.value);
         clearBtn.classList.toggle('hidden', !query);
         filterModalSearch(content, query);
+        equalizeDownloadCardHeights(content);
     };
 
     input.addEventListener('input', apply);
@@ -1109,8 +1109,16 @@ function initModalSearch(modalScroll) {
         apply();
     });
 
+    const equalize = () => equalizeDownloadCardHeights(content);
+    requestAnimationFrame(equalize);
+    content.querySelectorAll('img').forEach(img => {
+        if (!img.complete) img.addEventListener('load', equalize, { once: true });
+    });
+
     setTimeout(() => input.focus(), 100);
 }
+
+let modalResizeHandler = null;
 
 // ==================== EVENTOS DOS BOTÕES ====================
 document.querySelectorAll('[data-modal]').forEach(button => {
@@ -1122,26 +1130,40 @@ document.querySelectorAll('[data-modal]').forEach(button => {
 function openModal(type) {
     const data = modalContents[type] || { title: 'Conteúdo em construção', content: '<p>Em breve mais conteúdo aqui.</p>' };
     const hasSearch = SEARCHABLE_MODALS.has(type);
-    const scrollContent = hasSearch
-        ? `${buildModalSearchBar()}<div class="modal-searchable-content">${data.content}</div>`
-        : data.content;
 
     modalBody.innerHTML = `
-        <div class="modal-header-fixed">
-            <h2 class="section-title">${data.title}</h2>
-        </div>
-        <div class="modal-content-scroll">
-            ${scrollContent}
+        <div class="modal-inner">
+            <div class="modal-header-fixed">
+                <h2 class="section-title">${data.title}</h2>
+                ${hasSearch ? buildModalSearchBar() : ''}
+            </div>
+            <div class="modal-content-scroll">
+                ${hasSearch ? `<div class="modal-searchable-content">${data.content}</div>` : data.content}
+            </div>
         </div>
     `;
+
     modalElement.classList.remove('hidden');
+    document.body.classList.add('modal-open');
+
     if (hasSearch) {
-        initModalSearch(modalBody.querySelector('.modal-content-scroll'));
+        initModalSearch();
+        const searchable = modalBody.querySelector('.modal-searchable-content');
+        if (searchable) {
+            if (modalResizeHandler) window.removeEventListener('resize', modalResizeHandler);
+            modalResizeHandler = () => equalizeDownloadCardHeights(searchable);
+            window.addEventListener('resize', modalResizeHandler);
+        }
     }
 }
 
 function closeModal() {
     modalElement.classList.add('hidden');
+    document.body.classList.remove('modal-open');
+    if (modalResizeHandler) {
+        window.removeEventListener('resize', modalResizeHandler);
+        modalResizeHandler = null;
+    }
 }
 
 document.querySelector('.close-btn').addEventListener('click', closeModal);
@@ -1200,32 +1222,100 @@ carousel.addEventListener('mouseleave', () => {
 // ==================== MENU MOBILE ====================
 const menuToggle = document.querySelector('.menu-toggle');
 const topbarMenu = document.getElementById('topbarMenu');
-const menuOverlay = document.getElementById('menuOverlay');
+const topbarEl = document.querySelector('.topbar');
+const MOBILE_MENU_BREAKPOINT = 768;
 
-function toggleMenu() {
-    const isOpen = topbarMenu.classList.toggle('active');
-    menuOverlay.classList.toggle('hidden', !isOpen);
-    menuToggle.setAttribute('aria-expanded', isOpen);
+function isMobileMenuView() {
+    return window.innerWidth <= MOBILE_MENU_BREAKPOINT;
+}
+
+function syncTopbarHeight() {
+    if (!topbarEl) return;
+    const height = Math.ceil(topbarEl.getBoundingClientRect().height);
+    document.documentElement.style.setProperty('--topbar-mobile-height', `${height}px`);
+}
+
+function setMenuOpen(isOpen) {
+    if (!topbarMenu || !menuToggle) return;
+
+    topbarMenu.classList.toggle('active', isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    document.body.classList.toggle('menu-open', isOpen);
+
     const icon = menuToggle.querySelector('i');
+    if (!icon) return;
+
     if (isOpen) {
         icon.classList.remove('fa-bars');
         icon.classList.add('fa-times');
+        menuToggle.setAttribute('aria-label', 'Fechar menu');
     } else {
         icon.classList.remove('fa-times');
         icon.classList.add('fa-bars');
+        menuToggle.setAttribute('aria-label', 'Abrir menu');
     }
 }
 
-menuToggle.addEventListener('click', toggleMenu);
-menuOverlay.addEventListener('click', toggleMenu);
+function openMenu() {
+    if (!isMobileMenuView()) return;
+    syncTopbarHeight();
+    setMenuOpen(true);
+}
 
-document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && topbarMenu.classList.contains('active')) {
+function closeMenu() {
+    setMenuOpen(false);
+}
+
+function toggleMenu() {
+    if (!isMobileMenuView()) return;
+    syncTopbarHeight();
+    setMenuOpen(!topbarMenu.classList.contains('active'));
+}
+
+if (menuToggle && topbarMenu) {
+    menuToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
         toggleMenu();
-    }
-});
+    });
 
-document.querySelector('.close-menu-btn')?.addEventListener('click', toggleMenu);
+    topbarMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+
+    document.querySelector('.close-menu-btn')?.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        closeMenu();
+    });
+
+    topbarMenu.querySelectorAll('[data-modal]').forEach(button => {
+        button.addEventListener('click', () => {
+            closeMenu();
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!topbarMenu.classList.contains('active')) return;
+        if (topbarMenu.contains(e.target) || menuToggle.contains(e.target)) return;
+        closeMenu();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && topbarMenu.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        syncTopbarHeight();
+        if (!isMobileMenuView() && topbarMenu.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+
+    syncTopbarHeight();
+}
 
 // ==================== ESCONDER NUMERION AO CLICAR ====================
 document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
@@ -1243,8 +1333,8 @@ function showImportantNotice() {
     const timerElement = document.getElementById('timer');
     let timeLeft = 15;
 
-    // Mostrar a notificação
     notice.classList.add('show');
+    document.body.classList.add('notice-open');
 
     // Timer regressivo
     const countdown = setInterval(() => {
@@ -1260,6 +1350,7 @@ function showImportantNotice() {
     // Função para esconder
     function hideNotice() {
         notice.classList.remove('show');
+        document.body.classList.remove('notice-open');
         clearInterval(countdown);
     }
 
@@ -1274,8 +1365,96 @@ function showImportantNotice() {
     });
 }
 
-// Mostrar a notificação automaticamente quando a página carregar
+// ==================== BRAND YUUJIPLAY ====================
+document.getElementById('brandLink')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (confirm('O site será atualizado de INFINITY para YUUJIPLAY, deseja prosseguir?')) {
+        window.location.href = 'https://yuujiplay.com.br/';
+    }
+});
+
+// ==================== PARTÍCULAS DIGITAIS ====================
+function initParticles() {
+    const canvas = document.getElementById('particles-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    const colors = ['#ef4444', '#3b82f6', '#f97316', '#8b5cf6', '#ec4899', '#ffffff'];
+
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+
+    function createParticles() {
+        const count = Math.min(80, Math.floor((canvas.width * canvas.height) / 18000));
+        particles = Array.from({ length: count }, () => ({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            vx: (Math.random() - 0.5) * 0.4,
+            vy: (Math.random() - 0.5) * 0.4,
+            r: Math.random() * 1.8 + 0.5,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            alpha: Math.random() * 0.5 + 0.15
+        }));
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach((p, i) => {
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+            if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = p.color;
+            ctx.globalAlpha = p.alpha;
+            ctx.fill();
+
+            for (let j = i + 1; j < particles.length; j++) {
+                const q = particles[j];
+                const dx = p.x - q.x;
+                const dy = p.y - q.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < 120) {
+                    ctx.beginPath();
+                    ctx.moveTo(p.x, p.y);
+                    ctx.lineTo(q.x, q.y);
+                    ctx.strokeStyle = p.color;
+                    ctx.globalAlpha = (1 - dist / 120) * 0.12;
+                    ctx.lineWidth = 0.5;
+                    ctx.stroke();
+                }
+            }
+        });
+        ctx.globalAlpha = 1;
+        requestAnimationFrame(draw);
+    }
+
+    resize();
+    createParticles();
+    draw();
+    window.addEventListener('resize', () => { resize(); createParticles(); });
+}
+
+// ==================== PROXIMIDADE DO MOUSE ====================
+function initProximityTilt() {
+    document.querySelectorAll('.panel, .top-card, .menu-btn').forEach(el => {
+        el.classList.add('proximity-tilt');
+        el.addEventListener('mousemove', (e) => {
+            const rect = el.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width - 0.5) * 4;
+            const y = ((e.clientY - rect.top) / rect.height - 0.5) * -4;
+            el.style.transform = `perspective(600px) rotateY(${x}deg) rotateX(${y}deg)`;
+        });
+        el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+    });
+}
+
 window.addEventListener('load', () => {
-    // Pequeno delay para não aparecer junto com outros elementos
+    initParticles();
+    initProximityTilt();
     setTimeout(showImportantNotice, 800);
 });
