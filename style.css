@@ -1346,6 +1346,14 @@ body > footer {
     }
 }
 @media (max-width: 768px) {
+    body.menu-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
     .topbar {
         flex-wrap: nowrap;
         position: sticky;
@@ -1377,7 +1385,7 @@ body > footer {
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
-        overscroll-behavior: contain;
+        overscroll-behavior-y: contain;
         touch-action: pan-y;
         scrollbar-width: thin;
         scrollbar-color: var(--accent) var(--panel-2);
@@ -1385,8 +1393,6 @@ body > footer {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
-        height: calc(100vh - var(--topbar-mobile-height));
-        height: calc(100dvh - var(--topbar-mobile-height));
         max-height: calc(100vh - var(--topbar-mobile-height));
         max-height: calc(100dvh - var(--topbar-mobile-height));
     }
@@ -1413,6 +1419,7 @@ body > footer {
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        justify-content: flex-start;
         gap: 0;
         padding: var(--mobile-menu-space) var(--mobile-menu-pad-x) 1.25rem;
         box-sizing: border-box;
@@ -1742,6 +1749,7 @@ body > footer {
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        justify-content: flex-start;
     }
     .mobile-menu-divider {
         display: block;

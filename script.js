@@ -1242,6 +1242,10 @@ function setMenuOpen(isOpen) {
     menuToggle.setAttribute('aria-expanded', String(isOpen));
     document.body.classList.toggle('menu-open', isOpen);
 
+    if (isOpen && isMobileMenuView()) {
+        topbarMenu.scrollTop = 0;
+    }
+
     const icon = menuToggle.querySelector('i');
     if (!icon) return;
 
