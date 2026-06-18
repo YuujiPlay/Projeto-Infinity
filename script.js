@@ -1315,52 +1315,164 @@ if (menuToggle && topbarMenu) {
     syncTopbarHeight();
 }
 
-// ==================== ESCONDER NUMERION AO CLICAR ====================
+// ==================== ESCONDER NUMERION / NUMBERFIXE AO CLICAR ====================
 document.querySelectorAll('.menu-btn, .top-card').forEach(element => {
-    const numerion = element.querySelector('.numerion');
-    if (numerion) {
+    const badge = element.querySelector('.numerion, .numberfixe');
+    if (badge) {
         element.addEventListener('click', function() {
-            numerion.style.display = 'none';
+            badge.style.display = 'none';
         });
     }
 });
 
 // ====================== NOTIFICAÇÃO TEMPORÁRIA ======================
-function showImportantNotice() {
+const NOTICE_MOBILE_BREAKPOINT = 769;
+let noticeFabDismissed = false;
+let noticeCardDismissed = false;
+let noticeListenersBound = false;
+
+function isNoticeMobileView() {
+    return window.innerWidth < NOTICE_MOBILE_BREAKPOINT;
+}
+
+function clearNoticeDesktopLayout() {
     const notice = document.getElementById('important-notice');
-    const timerElement = document.getElementById('timer');
-    let timeLeft = 15;
+    if (!notice) return;
 
-    notice.classList.add('show');
-    document.body.classList.add('notice-open');
+    notice.style.position = '';
+    notice.style.top = '';
+    notice.style.left = '';
+    notice.style.width = '';
+    notice.style.right = '';
+    notice.style.bottom = '';
 
-    // Timer regressivo
-    const countdown = setInterval(() => {
-        timeLeft--;
-        timerElement.textContent = timeLeft;
+    const noticeCard = notice.querySelector('.notice-card');
+    if (noticeCard) noticeCard.style.maxHeight = '';
+}
 
-        if (timeLeft <= 0) {
-            clearInterval(countdown);
-            hideNotice();
-        }
-    }, 1000);
+function syncNoticeDesktopLayout() {
+    const notice = document.getElementById('important-notice');
+    if (!notice) return;
 
-    // Função para esconder
-    function hideNotice() {
-        notice.classList.remove('show');
-        document.body.classList.remove('notice-open');
-        clearInterval(countdown);
+    if (isNoticeMobileView()) {
+        clearNoticeDesktopLayout();
+        return;
     }
 
-    // Botão Fechar (X)
-    document.querySelector('.notice-close').addEventListener('click', hideNotice);
+    const rightPanel = document.querySelector('.right-panel:not(.mobile-only-panel)');
+    const centerPanel = document.querySelector('.center-panel');
+    const layout = document.querySelector('.layout');
+    const noticeCard = notice.querySelector('.notice-card');
+    if (!rightPanel || !layout) return;
 
-    // Fechar ao clicar fora do card (opcional)
-    notice.addEventListener('click', (e) => {
-        if (e.target === notice) {
-            hideNotice();
+    const panelRect = rightPanel.getBoundingClientRect();
+    const gap = parseFloat(getComputedStyle(layout).rowGap) || 20;
+
+    notice.style.position = 'fixed';
+    notice.style.top = `${panelRect.bottom + gap}px`;
+    notice.style.left = `${panelRect.left}px`;
+    notice.style.width = `${panelRect.width}px`;
+    notice.style.right = 'auto';
+    notice.style.bottom = 'auto';
+
+    if (centerPanel && noticeCard) {
+        const centerRect = centerPanel.getBoundingClientRect();
+        const availableHeight = centerRect.bottom - (panelRect.bottom + gap);
+        const maxHeight = Math.min(centerRect.height, availableHeight);
+        noticeCard.style.maxHeight = `${Math.max(maxHeight, 80)}px`;
+    }
+}
+
+function hideNoticeCard() {
+    const notice = document.getElementById('important-notice');
+    notice.classList.remove('card-open');
+    document.body.classList.remove('notice-open');
+}
+
+function hideNoticeFully() {
+    const notice = document.getElementById('important-notice');
+    notice.classList.remove('show', 'card-open');
+    document.body.classList.remove('notice-open');
+}
+
+function dismissNoticeFab() {
+    noticeFabDismissed = true;
+    hideNoticeFully();
+}
+
+function dismissNoticeCard() {
+    noticeCardDismissed = true;
+    hideNoticeFully();
+}
+
+function openNoticeCard() {
+    const notice = document.getElementById('important-notice');
+    notice.classList.add('card-open');
+    document.body.classList.add('notice-open');
+}
+
+function toggleNoticeCard() {
+    const notice = document.getElementById('important-notice');
+    if (notice.classList.contains('card-open')) {
+        hideNoticeCard();
+    } else {
+        openNoticeCard();
+    }
+}
+
+function bindNoticeListeners() {
+    if (noticeListenersBound) return;
+
+    const notice = document.getElementById('important-notice');
+    const fab = notice?.querySelector('.notice-fab');
+    const fabClose = notice?.querySelector('.notice-fab-close');
+    const cardClose = notice?.querySelector('.notice-close');
+
+    fab?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleNoticeCard();
+    });
+
+    fabClose?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dismissNoticeFab();
+    });
+
+    cardClose?.addEventListener('click', () => {
+        dismissNoticeCard();
+    });
+
+    notice?.addEventListener('click', (e) => {
+        if (isNoticeMobileView() && e.target === notice) {
+            hideNoticeCard();
         }
     });
+
+    const syncDesktopNotice = () => {
+        if (notice.classList.contains('show') && !isNoticeMobileView()) {
+            syncNoticeDesktopLayout();
+        }
+    };
+
+    window.addEventListener('resize', syncDesktopNotice);
+    window.addEventListener('scroll', syncDesktopNotice, { passive: true });
+
+    noticeListenersBound = true;
+}
+
+function showImportantNotice() {
+    if (noticeFabDismissed || noticeCardDismissed) return;
+
+    const notice = document.getElementById('important-notice');
+    bindNoticeListeners();
+    notice.classList.add('show');
+
+    if (isNoticeMobileView()) {
+        return;
+    }
+
+    syncNoticeDesktopLayout();
+    notice.classList.add('card-open');
 }
 
 // ==================== BRAND / MENU YUUJIPLAY ====================
@@ -1445,7 +1557,7 @@ function initParticles() {
 
 // ==================== PROXIMIDADE DO MOUSE ====================
 function initProximityTilt() {
-    document.querySelectorAll('.panel, .top-card, .menu-btn').forEach(el => {
+    document.querySelectorAll('.panel, .top-card, .menu-btn, .notice-card').forEach(el => {
         el.classList.add('proximity-tilt');
         el.addEventListener('mousemove', (e) => {
             const rect = el.getBoundingClientRect();
