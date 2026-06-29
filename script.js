@@ -8,32 +8,67 @@ const modalContents = {
         content: `
             <div class="update-info">Você está acessando a aba de status das texturas, para baixar ISO's, vá em "JOGOS PT-BR", o mesmo para "TEXTURAS".</div>
             <div class="project-card">
-                <h3 class="project-title">TAG FORCE 1</h3>
-                <div class="status-badge status-pausado">PAUSADO</div>
+                <div class="project-card__header">
+                    <h3 class="project-title">TAG FORCE 1</h3>
+                    <div class="status-badge status-pausado">PAUSADO</div>
+                </div>
+                <div class="project-progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                    <div class="project-progress__fill" style="--progress: 60%"></div>
+                </div>
             </div>
             <div class="project-card">
-                <h3 class="project-title">TAG FORCE 2</h3>
-                <div class="status-badge status-pausado">PAUSADO</div>
+                <div class="project-card__header">
+                    <h3 class="project-title">TAG FORCE 2</h3>
+                    <div class="status-badge status-pausado">PAUSADO</div>
+                </div>
+                <div class="project-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="project-progress__fill" style="--progress: 50%"></div>
+                </div>
             </div>
             <div class="project-card">
-                <h3 class="project-title">TAG FORCE 3</h3>
-                <div class="status-badge status-pausado">PAUSADO</div>
+                <div class="project-card__header">
+                    <h3 class="project-title">TAG FORCE 3</h3>
+                    <div class="status-badge status-pausado">PAUSADO</div>
+                </div>
+                <div class="project-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="project-progress__fill" style="--progress: 50%"></div>
+                </div>
             </div>
             <div class="project-card">
-                <h3 class="project-title">TAG FORCE 4</h3>
-                <div class="status-badge status-pausado">PAUSADO</div>
+                <div class="project-card__header">
+                    <h3 class="project-title">TAG FORCE 4</h3>
+                    <div class="status-badge status-pausado">PAUSADO</div>
+                </div>
+                <div class="project-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="project-progress__fill" style="--progress: 50%"></div>
+                </div>
             </div>
             <div class="project-card">
-                <h3 class="project-title">TAG FORCE 5</h3>
-                <div class="status-badge status-pausado">PAUSADO</div>
+                <div class="project-card__header">
+                    <h3 class="project-title">TAG FORCE 5</h3>
+                    <div class="status-badge status-pausado">PAUSADO</div>
+                </div>
+                <div class="project-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="project-progress__fill" style="--progress: 50%"></div>
+                </div>
             </div>
             <div class="project-card">
-                <h3 class="project-title">TAG FORCE 6</h3>
-                <div class="status-badge status-pausado">PAUSADO</div>
+                <div class="project-card__header">
+                    <h3 class="project-title">TAG FORCE 6</h3>
+                    <div class="status-badge status-pausado">PAUSADO</div>
+                </div>
+                <div class="project-progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="project-progress__fill" style="--progress: 50%"></div>
+                </div>
             </div>
             <div class="project-card">
-                <h3 class="project-title">TAG FORCE 7</h3>
-                <div class="status-badge status-pausado">PAUSADO</div>
+                <div class="project-card__header">
+                    <h3 class="project-title">TAG FORCE SPECIAL</h3>
+                    <div class="status-badge status-andamento">EM ANDAMENTO</div>
+                </div>
+                <div class="project-progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    <div class="project-progress__fill" style="--progress: 70%"></div>
+                </div>
             </div>
         `
     },
@@ -966,55 +1001,89 @@ problemas: {
         title: 'TUTORIAIS',
         content: `
             <div class="update-info">Tutoriais atualizados em 03/03/2026 às 11:51.</div>
-            <div class="tutorial-card">
-                <div class="tutorial-header">
-                    <i class="fab fa-youtube youtube-icon"></i>
-                    <h3 class="project-title">Projeto Infinity - Passo a Passo</h3>
-                    <a href="https://youtu.be/jUbhlur7WX8" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
+            <div class="premium-grid">
+                <div class="premium-card">
+                    <div class="premium-hero">
+                        <img class="premium-img" src="https://img.youtube.com/vi/jUbhlur7WX8/maxresdefault.jpg" alt="Yu-Gi-Oh! Tag Force [ISO PT-BR, Texturas, Etc.] 2026" loading="lazy">
+                    </div>
+                    <div class="premium-icon-bar youtube">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="premium-body">
+                        <h3 class="premium-title">Yu-Gi-Oh! Tag Force [ISO PT-BR, Texturas, Etc.] 2026</h3>
+                        <div class="premium-desc-card">
+                            <p class="premium-desc">Nesse vídeo mostro como baixar, instalar e jogar os jogos da série TAG FORCE em suas melhores versões usando as traduções e texturas do Projeto Infinity, com a ajuda de JuninFs nas traduções e YuujiPlay e ChrisFand nas texturas.</p>
+                        </div>
+                        <div class="premium-tags">
+                            <span class="premium-tag">ISO</span>
+                            <span class="premium-tag">TEXTURA</span>
+                            <span class="premium-tag">FONT</span>
+                            <span class="premium-tag">CHEATS</span>
+                            <span class="premium-tag">2026</span>
+                        </div>
+                        <a class="premium-cta" href="https://youtu.be/jUbhlur7WX8" target="_blank" rel="noopener noreferrer">ASSISTIR</a>
+                    </div>
                 </div>
-                <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 12px; padding: 15px 20px; margin-top: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
-                    <div class="download-tag">ISO</div>
-                    <div class="download-tag">TEXTURA</div>
-                    <div class="download-tag">FONT</div>
-                    <div class="download-tag">CHEATS</div>
-                    <div class="download-tag">2026</div>
+                <div class="premium-card">
+                    <div class="premium-hero">
+                        <img class="premium-img" src="https://img.youtube.com/vi/Y2s06fFWHmg/maxresdefault.jpg" alt="Projeto Infinity - Passo a Passo 2025" loading="lazy">
+                    </div>
+                    <div class="premium-icon-bar youtube">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="premium-body">
+                        <h3 class="premium-title">Projeto Infinity - Passo a Passo</h3>
+                        <div class="premium-desc-card">
+                            <p class="premium-desc">Versão do passo a passo do Projeto Infinity mostrando como baixar, instalar e configurar ISOs, texturas, fontes e cheats dos jogos TAG FORCE no emulador PPSSPP.</p>
+                        </div>
+                        <div class="premium-tags">
+                            <span class="premium-tag">ISO</span>
+                            <span class="premium-tag">TEXTURA</span>
+                            <span class="premium-tag">FONT</span>
+                            <span class="premium-tag">CHEATS</span>
+                            <span class="premium-tag">2025</span>
+                        </div>
+                        <a class="premium-cta" href="https://youtu.be/Y2s06fFWHmg" target="_blank" rel="noopener noreferrer">ASSISTIR</a>
+                    </div>
                 </div>
-            </div>
-            <div class="tutorial-card">
-                <div class="tutorial-header">
-                    <i class="fab fa-youtube youtube-icon"></i>
-                    <h3 class="project-title">Projeto Infinity - Passo a Passo</h3>
-                    <a href="https://youtu.be/Y2s06fFWHmg" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
+                <div class="premium-card">
+                    <div class="premium-hero">
+                        <img class="premium-img" src="https://img.youtube.com/vi/0yTz7_VJvjo/maxresdefault.jpg" alt="Colocando Cheat's no PSP" loading="lazy">
+                    </div>
+                    <div class="premium-icon-bar youtube">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="premium-body">
+                        <h3 class="premium-title">Colocando Cheat's no PSP</h3>
+                        <div class="premium-desc-card">
+                            <p class="premium-desc">Aprenda a colocar e ativar cheats no PPSSPP para seus jogos PSP de forma simples e rápida, ideal para quem quer personalizar a experiência nos jogos do Projeto Infinity.</p>
+                        </div>
+                        <div class="premium-tags">
+                            <span class="premium-tag">CHEATS</span>
+                            <span class="premium-tag">2025</span>
+                        </div>
+                        <a class="premium-cta" href="https://youtu.be/0yTz7_VJvjo" target="_blank" rel="noopener noreferrer">ASSISTIR</a>
+                    </div>
                 </div>
-                <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 12px; padding: 15px 20px; margin-top: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
-                    <div class="download-tag">ISO</div>
-                    <div class="download-tag">TEXTURA</div>
-                    <div class="download-tag">FONT</div>
-                    <div class="download-tag">CHEATS</div>
-                    <div class="download-tag">2025</div>
-                </div>
-            </div>
-            <div class="tutorial-card">
-                <div class="tutorial-header">
-                    <i class="fab fa-youtube youtube-icon"></i>
-                    <h3 class="project-title">Colocando Cheat's no PSP</h3>
-                    <a href="https://youtu.be/0yTz7_VJvjo" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
-                </div>
-                <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 12px; padding: 15px 20px; margin-top: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
-                    <div class="download-tag">CHEATS</div>
-                    <div class="download-tag">2025</div>
-                </div>
-            </div>
-            <div class="tutorial-card">
-                <div class="tutorial-header">
-                    <i class="fab fa-youtube youtube-icon"></i>
-                    <h3 class="project-title">Tag Force 1 Definitivo</h3>
-                    <a href="https://youtu.be/5ep5gfNPSok" target="_blank" rel="noopener noreferrer" class="assistir-btn">ASSISTIR</a>
-                </div>
-                <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 12px; padding: 15px 20px; margin-top: 25px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%;">
-                    <div class="download-tag">ISO</div>
-                    <div class="download-tag">TEXTURA</div>
-                    <div class="download-tag">2025</div>
+                <div class="premium-card">
+                    <div class="premium-hero">
+                        <img class="premium-img" src="https://img.youtube.com/vi/5ep5gfNPSok/maxresdefault.jpg" alt="Tag Force 1 Definitivo" loading="lazy">
+                    </div>
+                    <div class="premium-icon-bar youtube">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="premium-body">
+                        <h3 class="premium-title">Tag Force 1 Definitivo</h3>
+                        <div class="premium-desc-card">
+                            <p class="premium-desc">Tutorial completo para montar o TAG FORCE 1 Definitivo com a ISO traduzida e texturas do Projeto Infinity, pronto para jogar com a melhor experiência possível.</p>
+                        </div>
+                        <div class="premium-tags">
+                            <span class="premium-tag">ISO</span>
+                            <span class="premium-tag">TEXTURA</span>
+                            <span class="premium-tag">2025</span>
+                        </div>
+                        <a class="premium-cta" href="https://youtu.be/5ep5gfNPSok" target="_blank" rel="noopener noreferrer">ASSISTIR</a>
+                    </div>
                 </div>
             </div>
         `
@@ -1028,7 +1097,7 @@ const SEARCHABLE_MODALS = new Set([
     'menu_duelista', 'notificacoes', 'comunicados', 'problemas', 'recusados', 'novidades', 'servidores'
 ]);
 
-const MODAL_SEARCH_CARD_SELECTOR = '.tutorial-card, .profile-card, .page-card, .download-card, .option-item, .notif-card, .problem-main-card, .member-info-card';
+const MODAL_SEARCH_CARD_SELECTOR = '.premium-card, .profile-card, .page-card, .download-card, .option-item, .notif-card, .problem-main-card, .member-info-card';
 
 function normalizeSearchText(text) {
     return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
