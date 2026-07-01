@@ -468,35 +468,54 @@ body > footer {
 }
 .close-btn {
     position: absolute;
-    top: 0.85rem;
-    right: 0.85rem;
-    font-size: 1.25rem;
+    top: 0.625rem;
+    right: 0.625rem;
+    font-size: 0.875rem;
     font-weight: 700;
     line-height: 1;
     background: var(--close-btn-gradient);
     color: #fff;
-    width: 3rem;
-    height: 3rem;
-    min-width: 3rem;
-    min-height: 3rem;
+    width: 2.125rem;
+    height: 2.125rem;
+    min-width: 2.125rem;
+    min-height: 2.125rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 30;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
     padding: 0;
     margin: 0;
     float: none;
-    box-shadow: 0 4px 14px rgba(139, 92, 246, 0.45);
+    box-shadow: 0 3px 10px rgba(139, 92, 246, 0.4);
     transition: background 0.25s, color 0.25s, transform 0.25s, box-shadow 0.25s;
 }
-.close-btn:hover {
+.close-btn:hover,
+.close-btn:focus-visible {
     background: linear-gradient(135deg, #b44aff 0%, var(--close-btn-hover) 55%, #5b21b6 100%);
     color: white;
-    transform: scale(1.08);
-    box-shadow: 0 6px 18px rgba(160, 32, 240, 0.55);
+    transform: scale(1.06);
+    box-shadow: 0 4px 14px rgba(160, 32, 240, 0.5);
+    outline: none;
+}
+.close-btn:active {
+    transform: scale(0.97);
+}
+@media (max-width: 480px) {
+    .close-btn {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+        min-width: 2rem;
+        min-height: 2rem;
+        font-size: 0.8rem;
+    }
+    .modal-header-fixed {
+        padding: 1rem 2.75rem 1rem 1rem;
+    }
 }
 .profile-card {
     display: flex;
@@ -678,6 +697,50 @@ body > footer {
 .apoia-btn:hover {
     filter: brightness(1.1);
     transform: scale(1.04);
+}
+.left-panel-apoia {
+    margin-top: 0.25rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+}
+.left-panel-apoia .update-info {
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+}
+.left-panel-apoia .apoia-card {
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+.left-panel-apoia .apoia-icon {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+}
+.left-panel-apoia .apoia-email {
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+}
+.left-panel-apoia .apoia-btn {
+    width: 100%;
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+}
+.left-panel-apoia .progress-container {
+    margin-top: 0.75rem;
+    padding: 1rem;
+}
+.left-panel-apoia .progress-title {
+    font-size: 0.85rem;
+}
+.left-panel-apoia .progress-percentage {
+    font-size: 0.95rem;
+}
+.left-panel-apoia .progress-info {
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start;
+    font-size: 0.8rem;
 }
 .modal-searchable-content:has(> .download-card) {
     display: grid;
@@ -1206,7 +1269,7 @@ body > footer {
 .modal-header-fixed {
     background: var(--panel);
     z-index: 10;
-    padding: 1.25rem 3.75rem 1rem 1.25rem;
+    padding: 1.25rem 2.75rem 1rem 1.25rem;
     border-bottom: 0.125rem solid rgba(139, 92, 246, 0.35);
     text-align: center;
     flex-shrink: 0;
@@ -2614,7 +2677,7 @@ body > footer {
     background: linear-gradient(160deg, var(--panel-2) 0%, rgba(26, 26, 46, 0.88) 100%);
     border: 1px solid var(--border-glow);
     border-radius: 0.625rem;
-    padding: 0.7rem 0.8rem;
+    padding: 0.5rem 0.7rem;
     scrollbar-width: thin;
     scrollbar-color: var(--accent) var(--panel-2);
 }

@@ -129,32 +129,6 @@ const modalContents = {
             </div>
         `
     },
-apoia: {
-    title: 'APOIA-ME',
-    content: `
-        <div class="update-info">Informações atualizadas em 12/06/2026 às 19:45.</div>
-        <div class="apoia-card">
-            <i class="fas fa-qrcode apoia-icon"></i>
-            <div class="apoia-email">tatsuyayuuji9029@gmail.com</div>
-            <button class="apoia-btn" onclick="copyToClipboard('tatsuyayuuji9029@gmail.com')">COPIAR CHAVE PIX</button>
-        </div>
-
-        <!-- === BARRA DE PROGRESSO === -->
-        <div class="progress-container">
-            <div class="progress-header">
-                <span class="progress-title">Meta do Mês - Junho 2026</span>
-                <span class="progress-percentage">10%</span>
-            </div>
-            <div class="progress-bar-bg">
-                <div class="progress-bar-fill" style="width: 10%"></div>
-            </div>
-            <div class="progress-info">
-                <span><strong>R$ 10,00</strong> de R$ 100,00</span>
-                <span class="progress-dates">01/06/2026 — 30/06/2026</span>
-            </div>
-        </div>
-    `
-},
     paginas: {
         title: 'PÁGINAS',
         content: `
@@ -1246,18 +1220,52 @@ document.addEventListener('keydown', e => {
     }
 });
 
-function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-        notification.textContent = 'Chave PIX copiada com sucesso!';
-        notification.classList.add('show');
-        setTimeout(() => notification.classList.remove('show'), 2500);
-    }).catch(err => {
-        notification.textContent = 'Erro ao copiar a chave PIX';
-        notification.classList.add('show');
-        setTimeout(() => notification.classList.remove('show'), 2500);
-        console.error('Falha ao copiar:', err);
-    });
+function showNotification(message) {
+    if (!notification) return;
+    notification.textContent = message;
+    notification.classList.remove('hidden');
+    notification.classList.add('show');
+    notification.setAttribute('aria-hidden', 'false');
+    clearTimeout(showNotification._hideTimer);
+    showNotification._hideTimer = setTimeout(() => {
+        notification.classList.remove('show');
+        notification.setAttribute('aria-hidden', 'true');
+    }, 2500);
 }
+
+function fallbackCopyToClipboard(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'fixed';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.select();
+    const copied = document.execCommand('copy');
+    document.body.removeChild(textarea);
+    if (!copied) throw new Error('execCommand copy failed');
+}
+
+async function copyToClipboard(text) {
+    try {
+        if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+        } else {
+            fallbackCopyToClipboard(text);
+        }
+        showNotification('Copiado para a área de transferência!');
+    } catch (err) {
+        try {
+            fallbackCopyToClipboard(text);
+            showNotification('Copiado para a área de transferência!');
+        } catch (fallbackErr) {
+            showNotification('Erro ao copiar');
+            console.error('Falha ao copiar:', err, fallbackErr);
+        }
+    }
+}
+
+window.copyToClipboard = copyToClipboard;
 
 // ==================== CAROUSEL ====================
 const carousel = document.getElementById('carousel');
