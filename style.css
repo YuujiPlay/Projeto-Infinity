@@ -1113,7 +1113,7 @@ body > footer {
     font-weight: 700;
 }
 
-/* ====================== CORES DOS STATUS (como você pediu) ====================== */
+/* ====================== CORES DOS STATUS ====================== */
 .status-reportado {
     background: #ef4444;      /* REPORTADO = Vermelho */
     color: white;
@@ -1979,7 +1979,7 @@ body > footer {
     right: 1.2rem;
   }
 }
-/* === ESTILO DO MENU DE OPÇÕES (estilo Tag Force / menu de jogo) === */
+/* === ESTILO DO MENU DE OPÇÕES === */
 .options-menu {
     display: flex;
     flex-direction: column;
