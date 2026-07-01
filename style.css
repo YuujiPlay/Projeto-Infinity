@@ -1811,11 +1811,18 @@ body > footer {
         height: 28rem;
     }
 }
+/* Botão OPÇÕES no left-panel — somente mobile */
+.menu-btn.mobile-only {
+    display: none;
+}
 /* Inversão de ordem no mobile (center em cima) */
 @media (max-width: 768px) {
     .layout {
         display: flex;
         flex-direction: column;
+    }
+    .menu-btn.mobile-only {
+        display: block;
     }
     .center-panel {
         order: -1;
